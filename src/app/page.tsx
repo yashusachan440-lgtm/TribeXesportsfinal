@@ -57,7 +57,7 @@ const HeroSection = () => (
         <div className="relative aspect-video max-w-[600px] w-full">
             <iframe
               className="absolute top-0 left-0 w-full h-full rounded-lg shadow-2xl transform rotate-3"
-              src="https://www.youtube.com/embed/JDY8XkebaeA?autoplay=1&mute=1&loop=1&playlist=JDY8XkebaeA&controls=0&showinfo=0&autohide=1"
+              src="https://www.youtube.com/embed/JDY8XkebaeA?autoplay=1&loop=1&playlist=JDY8XkebaeA&controls=0&showinfo=0&autohide=1"
               title="YouTube video player"
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -299,3 +299,5 @@ const heroGradient = {
 const glowText = {
   textShadow: '0 0 10px hsl(var(--accent) / 0.7), 0 0 20px hsl(var(--primary) / 0.5)',
 };
+
+    

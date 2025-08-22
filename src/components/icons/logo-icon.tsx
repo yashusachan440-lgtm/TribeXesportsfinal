@@ -5,44 +5,21 @@ export function LogoIcon(props: SVGProps<SVGSVGElement>) {
   return (
     <svg
       width="100"
-      height="101"
-      viewBox="0 0 100 101"
+      height="100"
+      viewBox="0 0 100 100"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
       {...props}
     >
-      <g clipPath="url(#clip0_2_61)">
-        <path
-          d="M49.9998 2.11914L1.99982 26.1191V75.1191L49.9998 99.1191V51.1191L49.9998 2.11914Z"
-          fill="#E50914"
-        />
-        <path
-          d="M49.9998 2.11914L97.9998 26.1191V75.1191L49.9998 99.1191V51.1191L97.9998 26.1191"
-          fill="white"
-        />
-        <path
-          d="M50 2.11914L2 26.1191L50 51.1191L98 26.1191L50 2.11914Z"
-          fill="#F5F5F1"
-        />
-        <path
-          d="M1.99982 26.1191L49.9998 51.1191V99.1191L1.99982 75.1191V26.1191Z"
-          fill="#B20710"
-        />
-        <path
-          d="M97.9998 26.1191L49.9998 51.1191V99.1191L97.9998 75.1191V26.1191Z"
-          fill="white"
-        />
-      </g>
-      <defs>
-        <clipPath id="clip0_2_61">
-          <rect
-            width="96"
-            height="97"
-            fill="white"
-            transform="translate(2 2.11914)"
-          />
-        </clipPath>
-      </defs>
+        <g>
+            <polygon points="50,10 20,30 20,70 50,90 80,70 80,30" fill="black" />
+            <polygon points="50,10 20,30 50,30" fill="#E50914"/>
+            <polygon points="50,10 80,30 50,30" fill="white"/>
+            <polygon points="20,30 20,55 50,70 50,30" fill="#E50914"/>
+            <polygon points="80,30 80,55 50,70 50,30" fill="white"/>
+            <polygon points="35,58 35,80 50,90 50,73" fill="#E50914"/>
+            <polygon points="65,58 65,80 50,90 50,73" fill="white"/>
+        </g>
     </svg>
   );
 }

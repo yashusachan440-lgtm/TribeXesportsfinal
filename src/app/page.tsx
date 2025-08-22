@@ -224,10 +224,10 @@ const PartnersSection = () => (
         <h2 className="text-2xl font-bold mb-4 font-headline">Our Partners</h2>
         <div className="w-20 h-1 bg-gradient-to-r from-accent to-primary mx-auto"></div>
       </div>
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-8 items-center">
+      <div className="flex flex-wrap justify-center items-center gap-8">
         {[1, 2, 3, 4].map((p) => (
           <div key={p} className="flex justify-center">
-            <Image src={`https://placehold.co/150x80.png`} alt={`Partner ${p}`} width={150} height={80} className="h-16 w-auto opacity-80 hover:opacity-100 transition" data-ai-hint="company logo" />
+            <LogoIcon className="h-16 w-auto text-foreground/80 hover:text-white transition-colors" />
           </div>
         ))}
       </div>
@@ -240,7 +240,7 @@ const Footer = () => (
     <div className="container mx-auto px-4 sm:px-6 lg:px-8">
       <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
         <div>
-          <LogoIcon className="h-10 w-auto text-primary" />
+          <LogoIcon className="h-10 w-auto" />
           <p className="text-foreground/60 mt-4">The premier Free Fire tournament platform and community.</p>
         </div>
         <div>

@@ -40,7 +40,7 @@ export function Header() {
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-lg border-b border-border/50">
       <div className="container mx-auto flex h-16 items-center justify-between px-4">
         <a href="#home" onClick={(e) => { e.preventDefault(); document.querySelector('#home')?.scrollIntoView({ behavior: 'smooth' }); }} className="flex items-center gap-2">
-          <LogoIcon className="h-8 w-auto text-primary" />
+          <LogoIcon className="h-8 w-auto" />
         </a>
         <nav className="hidden md:flex items-center space-x-6">
           {navLinks.map((link) => (
@@ -63,7 +63,7 @@ export function Header() {
             <SheetContent side="right" className="w-full max-w-xs bg-background">
               <div className="flex flex-col h-full p-6">
                 <a href="#home" className="mb-8" onClick={() => setMenuOpen(false)}>
-                   <LogoIcon className="h-8 w-auto text-primary"/>
+                   <LogoIcon className="h-8 w-auto"/>
                 </a>
                 <nav className="flex flex-col space-y-4">
                   {navLinks.map((link) => (

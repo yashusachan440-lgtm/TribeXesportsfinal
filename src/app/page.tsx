@@ -10,6 +10,7 @@ import AITipsGenerator from '@/components/ai-tips-generator';
 import { DiscordIcon } from '@/components/icons/discord-icon';
 import { YoutubeIcon } from '@/components/icons/youtube-icon';
 import { Header } from '@/components/header';
+import { LogoIcon } from '@/components/icons/logo-icon';
 
 
 export default function Home() {
@@ -38,14 +39,14 @@ const HeroSection = () => (
         <div className="text-center md:text-left">
           <h1 className="text-4xl md:text-6xl font-bold mb-6 glow-text font-headline">
             <span className="block">The Ultimate</span>
-            <span className="block text-yellow-300">Free Fire</span>
+            <span className="block text-primary">Free Fire</span>
             <span className="block">Experience</span>
           </h1>
           <p className="text-lg md:text-xl mb-8 max-w-lg mx-auto md:mx-0 text-foreground/80">
             FFX Esports is launching with the biggest Free Fire tournaments, exclusive content, and a thriving community for competitive players.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
-            <Button size="lg" className="bg-yellow-400 hover:bg-yellow-500 text-black font-bold transition transform hover:scale-105">
+            <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground font-bold transition transform hover:scale-105">
               Join Waitlist <ArrowRight className="ml-2" />
             </Button>
             <Button size="lg" variant="outline" className="border-2 border-white/80 bg-transparent hover:bg-white hover:text-black transition transform hover:scale-105">
@@ -90,7 +91,7 @@ const AboutSection = () => (
           <p className="text-foreground/70">Weekly and monthly tournaments with massive prize pools, professional casting, and fair competition.</p>
         </Card>
         <Card className="bg-card/50 p-8 text-center border-border/50 hover:border-accent hover:scale-105 transition-all duration-300">
-          <Users className="text-yellow-400 mx-auto h-12 w-12 mb-4" />
+          <Users className="text-primary mx-auto h-12 w-12 mb-4" />
           <h3 className="text-xl font-bold mb-3 font-headline">Vibrant Community</h3>
           <p className="text-foreground/70">Connect with thousands of Free Fire enthusiasts, form squads, and grow together in our exclusive community.</p>
         </Card>
@@ -109,7 +110,7 @@ const TournamentCard = ({ title, prize, date, image, imageHint }: { title: strin
     <div className="relative">
       <Image src={image} alt={title} width={600} height={300} className="w-full object-cover" data-ai-hint={imageHint} />
       <div className="absolute top-4 right-4 bg-black/70 px-3 py-1 rounded-full text-sm font-semibold">
-        <span className="text-yellow-400">${prize}</span> Prize Pool
+        <span className="text-primary">${prize}</span> Prize Pool
       </div>
     </div>
     <CardContent className="p-6">
@@ -191,8 +192,8 @@ const NewsletterSection = () => (
       <p className="text-primary-foreground/80 mb-8">Sign up now for exclusive launch perks and tournament registration priority.</p>
       <form className="max-w-md mx-auto">
         <div className="flex">
-          <Input type="email" placeholder="Your email address" className="bg-background/20 border-0 text-white placeholder:text-white/60 flex-grow rounded-r-none focus:ring-2 focus:ring-yellow-400" />
-          <Button type="submit" className="bg-yellow-400 hover:bg-yellow-500 text-black font-bold rounded-l-none transition">
+          <Input type="email" placeholder="Your email address" className="bg-background/20 border-0 text-white placeholder:text-white/60 flex-grow rounded-r-none focus:ring-2 focus:ring-white" />
+          <Button type="submit" className="bg-white hover:bg-gray-200 text-black font-bold rounded-l-none transition">
             Subscribe <Paperclip className="ml-2 h-4 w-4" />
           </Button>
         </div>
@@ -239,8 +240,8 @@ const Footer = () => (
     <div className="container mx-auto px-4 sm:px-6 lg:px-8">
       <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
         <div>
-          <Image src="https://placehold.co/150x50/1E1B29/F00078?text=FFX" alt="FFX Esports Logo" width={100} height={33} className="mb-4" data-ai-hint="esports logo" />
-          <p className="text-foreground/60">The premier Free Fire tournament platform and community.</p>
+          <LogoIcon className="h-10 w-auto text-primary" />
+          <p className="text-foreground/60 mt-4">The premier Free Fire tournament platform and community.</p>
         </div>
         <div>
           <h3 className="text-lg font-bold mb-4 font-headline">Quick Links</h3>

@@ -98,10 +98,10 @@ export default {
         },
         'pulse': {
             '0%, 100%': {
-                boxShadow: '0 0 0 0 hsl(var(--accent) / 0.7)',
+                boxShadow: '0 0 0 0 hsl(var(--primary) / 0.7)',
             },
             '70%': {
-                boxShadow: '0 0 0 10px hsl(var(--accent) / 0)',
+                boxShadow: '0 0 0 10px hsl(var(--primary) / 0)',
             },
         },
       },

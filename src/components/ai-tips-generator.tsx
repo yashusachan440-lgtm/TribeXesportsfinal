@@ -54,12 +54,12 @@ export default function AITipsGenerator() {
   };
 
   return (
-    <Card className="bg-transparent border-accent/20 h-full">
+    <Card className="bg-transparent border-primary/20 h-full">
       <CardHeader>
         <div className="flex items-center gap-3">
-            <Wand2 className="text-accent h-8 w-8" />
+            <Wand2 className="text-primary h-8 w-8" />
             <div>
-                <CardTitle className="text-2xl font-bold text-accent font-headline">AI Coach</CardTitle>
+                <CardTitle className="text-2xl font-bold text-primary font-headline">AI Coach</CardTitle>
                 <CardDescription>Get AI-powered tips for any tournament.</CardDescription>
             </div>
         </div>
@@ -91,7 +91,7 @@ export default function AITipsGenerator() {
                 </FormItem>
               )}
             />
-            <Button type="submit" disabled={isLoading} className="w-full bg-accent hover:bg-accent/90">
+            <Button type="submit" disabled={isLoading} className="w-full bg-primary hover:bg-primary/90">
               {isLoading ? 'Generating...' : 'Get Pro Tips'}
             </Button>
           </form>

@@ -54,8 +54,15 @@ const HeroSection = () => (
             </Button>
           </div>
         </div>
-        <div className="relative">
-          <Image src="https://placehold.co/600x400.png" alt="Free Fire Esports" width={600} height={400} className="rounded-lg shadow-2xl transform rotate-3" data-ai-hint="esports gaming" />
+        <div className="relative aspect-video max-w-[600px] w-full">
+            <iframe
+              className="absolute top-0 left-0 w-full h-full rounded-lg shadow-2xl transform rotate-3"
+              src="https://www.youtube.com/embed/JDY8XkebaeA?autoplay=1&mute=1&loop=1&playlist=JDY8XkebaeA&controls=0&showinfo=0&autohide=1"
+              title="YouTube video player"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
           <div className="absolute -bottom-5 -left-5 bg-black/70 backdrop-blur-sm p-4 rounded-lg shadow-lg">
             <div className="flex items-center">
               <div className="bg-red-500 rounded-full w-3 h-3 mr-2 animate-ping"></div>

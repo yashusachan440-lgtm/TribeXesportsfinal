@@ -1,16 +1,19 @@
 
+'use client';
+
 import Image from 'next/image';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Input } from '@/components/ui/input';
-import { ArrowRight, Play, Trophy, Users, Star, Calendar, CheckCircle, Mail, Phone, MapPin, Paperclip, Facebook, Instagram, Twitter } from 'lucide-react';
+import { ArrowRight, Play, Trophy, Users, Star, Calendar, CheckCircle, Mail, Phone, MapPin, Paperclip, Facebook, Instagram, Twitter, Volume2, VolumeX } from 'lucide-react';
 import CountdownTimer from '@/components/countdown-timer';
 import AITipsGenerator from '@/components/ai-tips-generator';
 import { DiscordIcon } from '@/components/icons/discord-icon';
 import { YoutubeIcon } from '@/components/icons/youtube-icon';
 import { Header } from '@/components/header';
 import { LogoIcon } from '@/components/icons/logo-icon';
+import { useState } from 'react';
 
 
 export default function Home() {
@@ -31,49 +34,62 @@ export default function Home() {
   );
 }
 
-const HeroSection = () => (
-  <section id="home" className="relative pt-32 pb-20 px-4 sm:px-6 lg:px-8 overflow-hidden">
-    <div className="absolute inset-0 hero-gradient opacity-80"></div>
-    <div className="container mx-auto relative">
-      <div className="grid md:grid-cols-2 gap-10 items-center">
-        <div className="text-center md:text-left">
-          <h1 className="text-4xl md:text-6xl font-bold mb-6 glow-text font-headline">
-            <span className="block">The Ultimate</span>
-            <span className="block text-primary">Free Fire</span>
-            <span className="block">Experience</span>
-          </h1>
-          <p className="text-lg md:text-xl mb-8 max-w-lg mx-auto md:mx-0 text-foreground/80">
-            FFX Esports is launching with the biggest Free Fire tournaments, exclusive content, and a thriving community for competitive players.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
-            <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground font-bold transition transform hover:scale-105">
-              Join Waitlist <ArrowRight className="ml-2" />
-            </Button>
-            <Button size="lg" variant="outline" className="border-2 border-white/80 bg-transparent hover:bg-white hover:text-black transition transform hover:scale-105">
-              Watch Trailer <Play className="ml-2" />
-            </Button>
+const HeroSection = () => {
+  const [isMuted, setIsMuted] = useState(true);
+
+  const toggleMute = () => {
+    setIsMuted(!isMuted);
+  };
+
+  const videoSrc = `https://www.youtube.com/embed/JDY8XkebaeA?autoplay=1&loop=1&playlist=JDY8XkebaeA&controls=0&showinfo=0&autohide=1&mute=${isMuted ? 1 : 0}`;
+
+  return (
+    <section id="home" className="relative pt-32 pb-20 px-4 sm:px-6 lg:px-8 overflow-hidden">
+      <div className="absolute inset-0 hero-gradient opacity-80"></div>
+      <div className="container mx-auto relative">
+        <div className="grid md:grid-cols-2 gap-10 items-center">
+          <div className="text-center md:text-left">
+            <h1 className="text-4xl md:text-6xl font-bold mb-6 glow-text font-headline">
+              <span className="block">The Ultimate</span>
+              <span className="block text-primary">Free Fire</span>
+              <span className="block">Experience</span>
+            </h1>
+            <p className="text-lg md:text-xl mb-8 max-w-lg mx-auto md:mx-0 text-foreground/80">
+              FFX Esports is launching with the biggest Free Fire tournaments, exclusive content, and a thriving community for competitive players.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+              <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground font-bold transition transform hover:scale-105">
+                Join Waitlist <ArrowRight className="ml-2" />
+              </Button>
+              <Button size="lg" variant="outline" className="border-2 border-white/80 bg-transparent hover:bg-white hover:text-black transition transform hover:scale-105">
+                Watch Trailer <Play className="ml-2" />
+              </Button>
+            </div>
           </div>
-        </div>
-        <div className="relative aspect-video max-w-[600px] w-full">
-            <iframe
-              className="absolute top-0 left-0 w-full h-full rounded-lg shadow-2xl transform rotate-3"
-              src="https://www.youtube.com/embed/JDY8XkebaeA?autoplay=1&loop=1&playlist=JDY8XkebaeA&controls=0&showinfo=0&autohide=1&mute=1"
-              title="YouTube video player"
-              frameBorder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-            ></iframe>
-          <div className="absolute -bottom-5 -left-5 bg-black/70 backdrop-blur-sm p-4 rounded-lg shadow-lg">
-            <div className="flex items-center">
-              <div className="bg-red-500 rounded-full w-3 h-3 mr-2 animate-ping"></div>
-              <span className="text-sm font-bold uppercase tracking-widest">Launching Soon</span>
+          <div className="relative aspect-video max-w-[600px] w-full">
+              <iframe
+                className="absolute top-0 left-0 w-full h-full rounded-lg shadow-2xl transform rotate-3"
+                src={videoSrc}
+                title="YouTube video player"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              ></iframe>
+            <div className="absolute -bottom-5 -left-5 bg-black/70 backdrop-blur-sm p-4 rounded-lg shadow-lg flex gap-4 items-center">
+              <div className="flex items-center">
+                <div className="bg-red-500 rounded-full w-3 h-3 mr-2 animate-ping"></div>
+                <span className="text-sm font-bold uppercase tracking-widest">Launching Soon</span>
+              </div>
+              <Button size="icon" variant="outline" onClick={toggleMute} className="bg-transparent border-white/50 hover:bg-white/20">
+                {isMuted ? <VolumeX /> : <Volume2 />}
+              </Button>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-);
+    </section>
+  );
+};
 
 const CountdownSection = () => (
   <section className="py-16 bg-background/50">
@@ -300,5 +316,4 @@ const glowText = {
   textShadow: '0 0 10px hsl(var(--accent) / 0.7), 0 0 20px hsl(var(--primary) / 0.5)',
 };
 
-    
     

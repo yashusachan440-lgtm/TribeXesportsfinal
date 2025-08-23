@@ -77,7 +77,7 @@ export default function AITipsGenerator() {
                     <FormControl>
                       <SelectTrigger>
                         <SelectValue placeholder="Choose a tournament to get tips for..." />
-                      </Trigger>
+                      </SelectTrigger>
                     </FormControl>
                     <SelectContent>
                       {tournaments.map((tournament) => (

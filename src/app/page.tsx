@@ -45,11 +45,10 @@ const HeroSection = () => {
 
   return (
     <section id="home" className="relative pt-32 pb-20 px-4 sm:px-6 lg:px-8 overflow-hidden">
-      <div className="absolute inset-0 hero-gradient opacity-80"></div>
       <div className="container mx-auto relative">
         <div className="grid md:grid-cols-2 gap-10 items-center">
           <div className="text-center md:text-left">
-            <h1 className="text-4xl md:text-6xl font-bold mb-6 glow-text font-headline">
+            <h1 className="text-4xl md:text-6xl font-bold mb-6 font-headline">
               <span className="block">The Ultimate</span>
               <span className="block text-primary">Free Fire</span>
               <span className="block">Experience</span>
@@ -308,12 +307,5 @@ const Footer = () => (
     </div>
   </footer>
 );
-
-const heroGradient = {
-  background: 'linear-gradient(135deg, hsl(var(--accent)) 0%, hsl(var(--primary)) 100%)',
-};
-const glowText = {
-  textShadow: '0 0 10px hsl(var(--accent) / 0.7), 0 0 20px hsl(var(--primary) / 0.5)',
-};
 
     

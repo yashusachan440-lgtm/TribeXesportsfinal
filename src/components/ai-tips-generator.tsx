@@ -22,7 +22,7 @@ const FormSchema = z.object({
 type FormValues = z.infer<typeof FormSchema>;
 
 const tournaments = [
-  'FFX Grand Opening',
+  'Tribex Grand Opening',
   'Pro Series Qualifiers',
   'Community Cup',
 ];
@@ -77,7 +77,7 @@ export default function AITipsGenerator() {
                     <FormControl>
                       <SelectTrigger>
                         <SelectValue placeholder="Choose a tournament to get tips for..." />
-                      </SelectTrigger>
+                      </Trigger>
                     </FormControl>
                     <SelectContent>
                       {tournaments.map((tournament) => (

@@ -54,7 +54,7 @@ const HeroSection = () => {
               <span className="block">Experience</span>
             </h1>
             <p className="text-lg md:text-xl mb-8 max-w-lg mx-auto md:mx-0 text-foreground/80">
-              FFX Esports is launching with the biggest Free Fire tournaments, exclusive content, and a thriving community for competitive players.
+              Tribex Esports is launching with the biggest Free Fire tournaments, exclusive content, and a thriving community for competitive players.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
               <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground font-bold transition transform hover:scale-105">
@@ -103,7 +103,7 @@ const AboutSection = () => (
   <section id="about" className="py-20 bg-primary/5">
     <div className="container mx-auto px-4 sm:px-6 lg:px-8">
       <div className="text-center mb-16">
-        <h2 className="text-3xl md:text-4xl font-bold mb-4 font-headline">Why FFX Esports?</h2>
+        <h2 className="text-3xl md:text-4xl font-bold mb-4 font-headline">Why Tribex Esports?</h2>
         <div className="w-20 h-1 bg-gradient-to-r from-accent to-primary mx-auto"></div>
       </div>
       <div className="grid md:grid-cols-3 gap-8">
@@ -158,7 +158,7 @@ const TournamentsSection = () => (
         <div className="lg:col-span-2">
             <AITipsGenerator />
         </div>
-        <TournamentCard title="FFX Grand Opening" prize="10,000" date="Sep 5-7" image="https://placehold.co/600x300.png" imageHint="esports tournament" />
+        <TournamentCard title="Tribex Grand Opening" prize="10,000" date="Sep 5-7" image="https://placehold.co/600x300.png" imageHint="esports tournament" />
         <TournamentCard title="Pro Series Qualifiers" prize="25,000" date="Sep 15-20" image="https://placehold.co/600x300.png" imageHint="gaming championship" />
       </div>
     </div>
@@ -177,7 +177,7 @@ const CommunitySection = () => (
       <div className="grid md:grid-cols-2 gap-12 items-center">
         <div>
           <h2 className="text-3xl font-bold mb-6 font-headline">Join Our Growing Community</h2>
-          <p className="text-foreground/70 mb-6">Connect with thousands of Free Fire players, share strategies, find squad mates, and stay updated on all FFX Esports news.</p>
+          <p className="text-foreground/70 mb-6">Connect with thousands of Free Fire players, share strategies, find squad mates, and stay updated on all Tribex Esports news.</p>
           <div className="flex space-x-4">
             <SocialIcon href="#" className="bg-[#5865F2]"><DiscordIcon className="h-6 w-6" /></SocialIcon>
             <SocialIcon href="#" className="bg-[#FF0000]"><YoutubeIcon className="h-6 w-6" /></SocialIcon>
@@ -284,7 +284,7 @@ const Footer = () => (
         <div>
           <h3 className="text-lg font-bold mb-4 font-headline">Contact Us</h3>
           <ul className="space-y-3 text-foreground/60">
-            <li className="flex items-center gap-2"><Mail className="h-4 w-4 text-accent" /><span>contact@ffxesports.com</span></li>
+            <li className="flex items-center gap-2"><Mail className="h-4 w-4 text-accent" /><span>contact@tribexesports.com</span></li>
             <li className="flex items-center gap-2"><Phone className="h-4 w-4 text-accent" /><span>+1 (555) 123-4567</span></li>
             <li className="flex items-center gap-2"><MapPin className="h-4 w-4 text-accent" /><span>Esports Avenue, Singapore</span></li>
           </ul>
@@ -293,7 +293,7 @@ const Footer = () => (
       <div className="border-t border-border/20 pt-8">
         <div className="flex flex-col md:flex-row items-center justify-between">
           <div className="text-center md:text-left text-foreground/50 text-sm mb-4 md:mb-0">
-            &copy; {new Date().getFullYear()} FFX Esports. All rights reserved.
+            &copy; {new Date().getFullYear()} Tribex Esports. All rights reserved.
           </div>
           <div className="flex justify-center md:justify-end space-x-6 text-foreground/50">
             <a href="#" className="hover:text-white transition"><Facebook className="h-5 w-5" /></a>
@@ -307,5 +307,7 @@ const Footer = () => (
     </div>
   </footer>
 );
+
+    
 
     

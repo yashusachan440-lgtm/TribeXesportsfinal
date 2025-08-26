@@ -8,9 +8,7 @@ import CountdownTimer from '@/components/countdown-timer';
 import { DiscordIcon } from '@/components/icons/discord-icon';
 import { useState } from 'react';
 import { WhatsAppIcon } from '@/components/icons/whatsapp-icon';
-import { YoutubeIcon } from '@/components/icons/youtube-icon';
-import { Twitter } from 'lucide-react';
-import { Instagram } from 'lucide-react';
+import { LogoIcon } from '@/components/icons/logo-icon';
 
 
 export default function Home() {
@@ -43,7 +41,8 @@ const HeroSection = () => {
            <div className="absolute top-0 left-0 w-full h-full bg-black/60"></div>
         </div>
 
-        <div className="absolute top-4 left-4 z-20">
+        <div className="absolute top-4 left-4 z-20 flex items-center gap-2">
+            <LogoIcon />
             <h2 className="text-2xl font-bold font-headline">
                 <span className="text-primary">TribeX</span>
                 <span className="text-white"> Esports</span>

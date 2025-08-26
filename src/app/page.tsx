@@ -65,7 +65,7 @@ const HeroSection = () => {
           <div className="flex flex-col lg:flex-row items-center justify-between gap-8 w-full">
             <div className="w-full max-w-2xl text-center lg:text-left flex flex-col items-center lg:items-start">
               <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6 font-headline leading-tight">
-                <span className="block text-white">Revolutionizing</span>
+                <span className="block text-white font-display">Revolutionizing</span>
                 <FreeFireLogo className="h-10 sm:h-14 md:h-16 lg:h-20 inline-block my-2" />
                 <span className="block text-white">Community Forever</span>
               </h1>

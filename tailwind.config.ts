@@ -20,6 +20,7 @@ export default {
       fontFamily: {
         body: ['Space Grotesk', 'sans-serif'],
         headline: ['Space Grotesk', 'sans-serif'],
+        display: ['Cinzel', 'serif'],
         code: ['monospace'],
       },
       colors: {

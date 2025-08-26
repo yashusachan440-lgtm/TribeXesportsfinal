@@ -10,7 +10,7 @@ import { useState, useEffect } from 'react';
 import { WhatsAppIcon } from '@/components/icons/whatsapp-icon';
 import { LogoIcon } from '@/components/icons/logo-icon';
 import LottiePlayer from '@/components/lottie-player';
-import confettiAnimation from '@/../public/animations/confetti.json';
+import { FreeFireLogo } from '@/components/icons/free-fire-logo';
 
 
 export default function Home() {
@@ -67,7 +67,7 @@ const HeroSection = () => {
             <div className="w-full max-w-2xl text-center md:text-left flex flex-col items-center md:items-start">
               <h1 className="text-5xl md:text-7xl font-bold mb-6 font-headline leading-tight">
                 <span className="block">The Ultimate</span>
-                <span className="block text-primary bg-clip-text text-transparent bg-gradient-to-r from-primary to-accent">Free Fire</span>
+                <FreeFireLogo className="h-16 md:h-24 inline-block my-2" />
                 <span className="block">Experience</span>
               </h1>
               <p className="text-base sm:text-lg md:text-xl mb-8 max-w-lg text-white/80 mx-auto md:mx-0">
@@ -88,12 +88,9 @@ const HeroSection = () => {
               </div>
             </div>
             <div className="w-full md:w-auto mt-8 md:mt-0 relative flex flex-col items-center justify-center md:ml-auto">
-              <div className="absolute inset-0 z-0">
-                  <LottiePlayer animationData={confettiAnimation} />
-              </div>
               <div className="relative z-10 flex flex-col items-center">
                 <CountdownTimer targetDate="2025-09-15T00:00:00" />
-                <div className="mt-4 bg-black/30 backdrop-blur-sm rounded-full px-4 py-2 flex items-center whitespace-nowrap">
+                <div className="mt-4 bg-black/30 backdrop-blur-sm rounded-full px-4 py-2 flex items-center whitespace-nowrap justify-center">
                     <span className="relative flex h-3 w-3 mr-3">
                         <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>
                         <span className="relative inline-flex rounded-full h-3 w-3 bg-red-500"></span>
@@ -126,4 +123,3 @@ const Footer = () => (
       </div>
     </footer>
   );
-

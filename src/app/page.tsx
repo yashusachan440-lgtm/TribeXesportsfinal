@@ -28,28 +28,33 @@ export default function Home() {
 }
 
 const HeroSection = () => {
-  const [isMuted, setIsMuted] = useState(true);
-
-  const toggleMute = () => {
-    setIsMuted(!isMuted);
-  };
-
-  const videoSrc = `https://www.youtube.com/embed/JDY8XkebaeA?autoplay=1&loop=1&playlist=JDY8XkebaeA&controls=0&showinfo=0&autohide=1&mute=${isMuted ? 1 : 0}`;
-
-  return (
-    <section id="home" className="relative pt-32 pb-20 px-4 sm:px-6 lg:px-8 overflow-hidden">
-      <div className="container mx-auto relative">
-        <div className="grid md:grid-cols-2 gap-10 items-center">
-          <div className="text-center md:text-left">
+    const videoSrc = `https://www.youtube.com/embed/JDY8XkebaeA?autoplay=1&loop=1&playlist=JDY8XkebaeA&controls=0&showinfo=0&autohide=1&mute=1&playsinline=1`;
+  
+    return (
+      <section id="home" className="relative h-screen flex items-center justify-center text-white overflow-hidden">
+        <div className="absolute top-0 left-0 w-full h-full z-[-1] overflow-hidden">
+          <iframe
+            className="absolute top-1/2 left-1/2 w-full h-full object-cover transform -translate-x-1/2 -translate-y-1/2"
+            style={{ minWidth: '177.77vh', minHeight: '100vw' }}
+            src={videoSrc}
+            title="YouTube video player"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          ></iframe>
+           <div className="absolute top-0 left-0 w-full h-full bg-black/60"></div>
+        </div>
+  
+        <div className="container mx-auto relative z-10 text-center">
             <h1 className="text-4xl md:text-6xl font-bold mb-6 font-headline">
               <span className="block">The Ultimate</span>
               <span className="block text-primary">Free Fire</span>
               <span className="block">Experience</span>
             </h1>
-            <p className="text-lg md:text-xl mb-8 max-w-lg mx-auto md:mx-0 text-foreground/80">
+            <p className="text-lg md:text-xl mb-8 max-w-lg mx-auto text-white/80">
               Tribex Esports is launching with the biggest Free Fire tournaments, exclusive content, and a thriving community for competitive players.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground font-bold transition transform hover:scale-105">
                 Join Waitlist <ArrowRight className="ml-2" />
               </Button>
@@ -57,28 +62,16 @@ const HeroSection = () => {
                 Watch Trailer <Play className="ml-2" />
               </Button>
             </div>
-          </div>
-          <div className="relative aspect-video max-w-[600px] w-full">
-              <iframe
-                className="absolute top-0 left-0 w-full h-full rounded-lg shadow-2xl transform rotate-3"
-                src={videoSrc}
-                title="YouTube video player"
-                frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-              ></iframe>
-            <div className="absolute -bottom-5 -left-5 bg-black/70 backdrop-blur-sm p-4 rounded-lg shadow-lg flex gap-4 items-center">
+             <div className="absolute bottom-10 left-1/2 -translate-x-1/2 bg-black/70 backdrop-blur-sm p-4 rounded-lg shadow-lg flex gap-4 items-center">
               <div className="flex items-center">
                 <div className="bg-red-500 rounded-full w-3 h-3 mr-2 animate-ping"></div>
                 <span className="text-sm font-bold uppercase tracking-widest">Launching Soon</span>
               </div>
             </div>
-          </div>
         </div>
-      </div>
-    </section>
-  );
-};
+      </section>
+    );
+  };
 
 const CountdownSection = () => (
   <section className="py-16 bg-background/50">

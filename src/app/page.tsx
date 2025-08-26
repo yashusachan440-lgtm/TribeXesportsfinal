@@ -11,7 +11,7 @@ import { WhatsAppIcon } from '@/components/icons/whatsapp-icon';
 import { LogoIcon } from '@/components/icons/logo-icon';
 import LottiePlayer from '@/components/lottie-player';
 import { FreeFireLogo } from '@/components/icons/free-fire-logo';
-import confettiAnimation from '@/../public/animations/confetti.json';
+import confettiAnimation from '../../public/animations/confetti.json';
 
 
 export default function Home() {
@@ -66,7 +66,7 @@ const HeroSection = () => {
             <div className="w-full max-w-2xl text-center lg:text-left flex flex-col items-center lg:items-start">
               <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6 font-headline leading-tight">
                 <span className="block text-white">Revolutionizing</span>
-                <FreeFireLogo className="h-12 sm:h-16 md:h-20 lg:h-24 inline-block my-2" />
+                <FreeFireLogo className="h-10 sm:h-14 md:h-16 lg:h-20 inline-block my-2" />
                 <span className="block text-white">Community Forever</span>
               </h1>
               <p className="text-base sm:text-lg md:text-xl mb-8 max-w-lg text-white/80 mx-auto lg:mx-0">

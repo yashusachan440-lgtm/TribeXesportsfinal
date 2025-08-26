@@ -15,12 +15,6 @@ import confettiAnimation from '../../public/animations/confetti.json';
 
 
 export default function Home() {
-  const [isClient, setIsClient] = useState(false)
-
-  useEffect(() => {
-    setIsClient(true)
-  }, [])
-  
   return (
     <div className="flex flex-col min-h-[100dvh] bg-background">
       
@@ -128,6 +122,7 @@ const Footer = () => (
   );
 
     
+
 
 
 

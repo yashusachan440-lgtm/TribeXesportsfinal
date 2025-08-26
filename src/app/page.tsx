@@ -75,15 +75,15 @@ const HeroSection = () => {
                 </Button>
               </div>
             </div>
-            <div className="w-full md:w-auto mt-8 md:mt-0 relative">
+            <div className="w-full md:w-auto mt-8 md:mt-0 relative flex flex-col items-center">
                 <Confetti />
                 <CountdownTimer targetDate="2025-09-01T00:00:00" />
-                <div className="mt-4 bg-black/30 backdrop-blur-sm rounded-full px-4 py-2 flex items-center justify-center text-center">
+                <div className="mt-4 bg-black/30 backdrop-blur-sm rounded-full px-4 py-2 flex items-center">
                     <span className="relative flex h-3 w-3 mr-3">
                         <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>
                         <span className="relative inline-flex rounded-full h-3 w-3 bg-red-500"></span>
                     </span>
-                    <p className="text-sm sm:text-base text-white/80 font-semibold">Launching 15 September 2025</p>
+                    <p className="text-sm sm:text-base text-white/80 font-semibold whitespace-nowrap">Launching 15 September 2025</p>
                 </div>
             </div>
           </div>

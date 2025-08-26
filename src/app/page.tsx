@@ -59,7 +59,7 @@ const HeroSection = () => {
                 <h2 className="text-lg sm:text-xl md:text-2xl font-semibold text-white/90 font-poppins">
                   Revolutionizing
                 </h2>
-                <FreeFireLogo className="h-8 sm:h-10 md:h-12" />
+                <FreeFireLogo className="h-12 sm:h-14 md:h-16" />
                 <h2 className="text-lg sm:text-xl md:text-2xl font-semibold text-white/90 font-poppins">
                   Community
                 </h2>
@@ -122,6 +122,7 @@ const Footer = () => (
   );
 
     
+
 
 
 

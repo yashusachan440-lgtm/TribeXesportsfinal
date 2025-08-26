@@ -73,21 +73,21 @@ const HeroSection = () => {
               </p>
               <div className="flex flex-col sm:flex-row gap-4 mb-10 justify-center md:justify-start">
                 <a href="https://discord.gg/h52CbbBXFk" target="_blank" rel="noopener noreferrer">
-                  <Button size="lg" className="bg-[#5865F2] hover:bg-[#4f5bda] text-white font-bold transition transform hover:scale-105 flex items-center gap-2 rounded-full">
+                  <Button size="lg" className="bg-[#5865F2] hover:bg-[#4f5bda] text-white font-bold transition flex items-center gap-2 rounded-full">
                     <DiscordIcon className="h-6 w-6" />
                     Join Discord
                   </Button>
                 </a>
                 <a href="https://chat.whatsapp.com/your-group-link" target="_blank" rel="noopener noreferrer">
-                  <Button size="lg" className="bg-[#25D366] hover:bg-[#1EBE57] text-white font-bold transition transform hover:scale-105 flex items-center gap-2 rounded-full">
+                  <Button size="lg" className="bg-[#25D366] hover:bg-[#1EBE57] text-white font-bold transition flex items-center gap-2 rounded-full">
                     <WhatsAppIcon className="h-6 w-6" /> Join Whatsapp
                   </Button>
                 </a>
               </div>
             </div>
-            <div className="w-full md:w-auto mt-8 md:mt-0 relative flex flex-col items-center justify-center md:justify-start">
+            <div className="w-full md:w-auto mt-8 md:mt-0 relative flex flex-col items-center justify-center md:items-start md:ml-auto">
                 <Confetti />
-                <CountdownTimer targetDate="2025-09-01T00:00:00" />
+                <CountdownTimer targetDate="2025-09-15T00:00:00" />
                 <div className="mt-4 bg-black/30 backdrop-blur-sm rounded-full px-4 py-2 flex items-center whitespace-nowrap">
                     <span className="relative flex h-3 w-3 mr-3">
                         <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>

@@ -113,6 +113,10 @@ export default {
                 transform: 'translateY(110vh) rotate(720deg)',
                 opacity: '0',
             }
+        },
+        'blink': {
+          '0%, 100%': { opacity: '1' },
+          '50%': { opacity: '0.5' },
         }
       },
       animation: {
@@ -120,6 +124,7 @@ export default {
         'accordion-up': 'accordion-up 0.2s ease-out',
         'pulse': 'pulse 2s infinite',
         'fall': 'fall 10s linear infinite',
+        'blink': 'blink 1s cubic-bezier(0.4, 0, 0.6, 1) infinite',
       },
     },
   },

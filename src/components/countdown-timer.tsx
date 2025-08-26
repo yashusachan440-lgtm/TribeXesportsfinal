@@ -5,7 +5,7 @@ import { useState, useEffect } from 'react';
 
 const CountdownBox = ({ value, label }: { value: string; label: string }) => (
   <div className="bg-white/10 backdrop-blur-md rounded-lg border border-white/20 p-2 sm:p-3 md:py-4 md:px-6 text-center w-16 sm:w-20 md:w-28">
-    <div className="text-2xl sm:text-4xl md:text-6xl font-bold font-headline">{value}</div>
+    <div className="text-2xl sm:text-4xl md:text-6xl font-bold font-body">{value}</div>
     <div className="text-[10px] sm:text-xs md:text-base opacity-80 uppercase tracking-widest">{label}</div>
   </div>
 );

@@ -57,13 +57,20 @@ const HeroSection = () => {
   
         <div className="container mx-auto relative z-10 px-4 flex-1 flex flex-col justify-center">
           <div className="flex flex-col lg:flex-row items-center justify-between gap-8 w-full">
-            <div className="w-full max-w-2xl text-center lg:text-left flex flex-col items-center lg:items-start">
-              <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6 font-headline leading-tight">
-                <span className="block text-white font-display">Revolutionizing</span>
-                <FreeFireLogo className="h-10 sm:h-14 md:h-16 lg:h-20 inline-block my-2" />
-                <span className="block text-white">Community Forever</span>
+            <div className="w-full max-w-4xl text-center lg:text-left flex flex-col items-center lg:items-start">
+              <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-extrabold mb-4 font-display leading-tight">
+                <span className="text-primary">TribeX</span> <span className="text-white">Esports</span>
               </h1>
-              <div className="text-sm sm:text-base md:text-lg mb-8 max-w-lg text-white/80 mx-auto lg:mx-0">
+              <div className="flex items-center justify-center lg:justify-start gap-2 sm:gap-4 mb-6">
+                <h2 className="text-lg sm:text-xl md:text-2xl font-semibold text-white/90 font-headline">
+                  Revolutionizing
+                </h2>
+                <FreeFireLogo className="h-8 sm:h-10 md:h-12" />
+                <h2 className="text-lg sm:text-xl md:text-2xl font-semibold text-white/90 font-headline">
+                  Community Forever
+                </h2>
+              </div>
+              <div className="text-sm sm:text-base md:text-lg mb-8 max-w-2xl text-white/80 mx-auto lg:mx-0">
                 <p>Something is about to shake the Indian esports scene… A movement is rising—one that doesn’t care about fame, money, or background. Only skill will decide who stands at the top. A place where players become family. Where tournaments are fair, opportunities are equal, and legends are made.</p>
               </div>
               <div className="flex flex-col sm:flex-row gap-4 mb-10 justify-center lg:justify-start">
@@ -119,3 +126,5 @@ const Footer = () => (
       </div>
     </footer>
   );
+
+    

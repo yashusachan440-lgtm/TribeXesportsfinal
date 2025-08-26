@@ -19,7 +19,6 @@ export default function Home() {
       
       <main className="flex-1">
         <HeroSection />
-        <CountdownSection />
       </main>
       <Footer />
     </div>
@@ -52,6 +51,12 @@ const HeroSection = () => {
   
         <div className="container mx-auto relative z-10 text-left">
             <div className="max-w-2xl">
+                <div className="mb-8">
+                    <h2 className="text-2xl font-bold font-headline">
+                        <span className="text-primary">TribeX</span>
+                        <span className="text-white"> Esports</span>
+                    </h2>
+                </div>
               <h1 className="text-5xl md:text-7xl font-bold mb-6 font-headline leading-tight">
                 <span className="block">The Ultimate</span>
                 <span className="block text-primary bg-clip-text text-transparent bg-gradient-to-r from-primary to-accent">Free Fire</span>
@@ -60,7 +65,7 @@ const HeroSection = () => {
               <p className="text-lg md:text-xl mb-8 max-w-lg text-white/80">
                 Tribex Esports is launching with the biggest Free Fire tournaments, exclusive content, and a thriving community for competitive players.
               </p>
-              <div className="flex flex-col sm:flex-row gap-4">
+              <div className="flex flex-col sm:flex-row gap-4 mb-10">
                 <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground font-bold transition transform hover:scale-105 shadow-lg shadow-primary/30">
                   Join Waitlist <ArrowRight className="ml-2" />
                 </Button>
@@ -68,6 +73,7 @@ const HeroSection = () => {
                   Watch Trailer <Play className="ml-2" />
                 </Button>
               </div>
+                <CountdownTimer targetDate="2025-09-01T00:00:00" />
             </div>
              <div className="absolute bottom-10 left-4 bg-black/70 backdrop-blur-sm p-4 rounded-lg shadow-lg flex gap-4 items-center">
               <div className="flex items-center">
@@ -79,15 +85,6 @@ const HeroSection = () => {
       </section>
     );
   };
-
-const CountdownSection = () => (
-  <section className="py-16 bg-background/50">
-    <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
-      <h2 className="text-3xl font-bold mb-8 font-headline">Launching In</h2>
-      <CountdownTimer targetDate="2025-09-01T00:00:00" />
-    </div>
-  </section>
-);
 
 const Footer = () => (
     <footer id="contact" className="bg-primary/5 py-8">
@@ -106,4 +103,3 @@ const Footer = () => (
       </div>
     </footer>
   );
-

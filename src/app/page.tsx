@@ -51,13 +51,7 @@ const HeroSection = () => {
 
         <header className="absolute top-0 left-0 right-0 z-20 p-4">
           <div className="container mx-auto flex items-center justify-between">
-            <div className="flex items-center gap-2">
-              <LogoIcon />
-              <h2 className="text-xl sm:text-2xl font-bold font-headline whitespace-nowrap">
-                  <span className="text-primary">TribeX</span>
-                  <span className="text-white"> Esports</span>
-              </h2>
-            </div>
+            
           </div>
         </header>
   

@@ -6,7 +6,7 @@ import { Button } from '@/components/ui/button';
 import { ArrowRight, Play, Mail, Phone } from 'lucide-react';
 import CountdownTimer from '@/components/countdown-timer';
 import { DiscordIcon } from '@/components/icons/discord-icon';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { WhatsAppIcon } from '@/components/icons/whatsapp-icon';
 import { LogoIcon } from '@/components/icons/logo-icon';
 import Confetti from '@/components/confetti';
@@ -19,7 +19,6 @@ export default function Home() {
       <main className="flex-1">
         <HeroSection />
       </main>
-      <Footer />
     </div>
   );
 }
@@ -28,7 +27,7 @@ const HeroSection = () => {
     const videoSrc = `https://www.youtube.com/embed/JDY8XkebaeA?autoplay=1&loop=1&playlist=JDY8XkebaeA&controls=0&showinfo=0&autohide=1&mute=1&playsinline=1`;
   
     return (
-      <section id="home" className="relative h-screen flex items-center justify-center text-white overflow-hidden">
+      <section id="home" className="relative h-screen flex flex-col justify-between text-white overflow-hidden">
         <div className="absolute top-0 left-0 w-full h-full z-0 overflow-hidden">
           <iframe
             className="absolute top-1/2 left-1/2 w-full h-full object-cover transform -translate-x-1/2 -translate-y-1/2"
@@ -56,8 +55,8 @@ const HeroSection = () => {
             </Button>
         </div>
   
-        <div className="container mx-auto relative z-10 px-4">
-          <div className="flex flex-col md:flex-row items-center justify-between gap-8 md:gap-4">
+        <div className="container mx-auto relative z-10 px-4 flex-1 flex items-center">
+          <div className="flex flex-col md:flex-row items-center justify-between gap-8 md:gap-4 w-full">
             <div className="max-w-2xl text-center md:text-left">
               <h1 className="text-5xl md:text-7xl font-bold mb-6 font-headline leading-tight">
                 <span className="block">The Ultimate</span>
@@ -82,12 +81,13 @@ const HeroSection = () => {
             </div>
           </div>
         </div>
+        <Footer />
       </section>
     );
   };
 
 const Footer = () => (
-    <footer id="contact" className="bg-transparent py-8">
+    <footer id="contact" className="bg-transparent py-8 relative z-10">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="text-center md:text-left text-foreground/50 text-sm">

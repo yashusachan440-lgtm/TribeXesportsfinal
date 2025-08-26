@@ -67,10 +67,13 @@ const HeroSection = () => {
                 Tribex Esports is launching with the biggest Free Fire tournaments, exclusive content, and a thriving community for competitive players.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 mb-10 justify-center md:justify-start">
-                <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground font-bold transition transform hover:scale-105 shadow-lg shadow-primary/30">
-                  Join Waitlist <ArrowRight className="ml-2" />
-                </Button>
-                <Button size="lg" variant="outline" className="border-2 border-white/80 bg-transparent hover:bg-white hover:text-black font-bold transition transform hover:scale-105">
+                <a href="https://discord.gg/h52CbbBXFk" target="_blank" rel="noopener noreferrer">
+                  <Button size="lg" className="bg-[#5865F2] hover:bg-[#4f5bda] text-white font-bold transition transform hover:scale-105 shadow-lg shadow-[#5865F2]/30 flex items-center gap-2 rounded-full">
+                    <DiscordIcon className="h-6 w-6" />
+                    JOIN US
+                  </Button>
+                </a>
+                <Button size="lg" variant="outline" className="border-2 border-white/80 bg-transparent hover:bg-white hover:text-black font-bold transition transform hover:scale-105 rounded-full">
                   Watch Trailer <Play className="ml-2" />
                 </Button>
               </div>
@@ -78,12 +81,12 @@ const HeroSection = () => {
             <div className="w-full md:w-auto mt-8 md:mt-0 relative flex flex-col items-center">
                 <Confetti />
                 <CountdownTimer targetDate="2025-09-01T00:00:00" />
-                <div className="mt-4 bg-black/30 backdrop-blur-sm rounded-full px-4 py-2 flex items-center">
+                <div className="mt-4 bg-black/30 backdrop-blur-sm rounded-full px-4 py-2 flex items-center whitespace-nowrap">
                     <span className="relative flex h-3 w-3 mr-3">
                         <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>
                         <span className="relative inline-flex rounded-full h-3 w-3 bg-red-500"></span>
                     </span>
-                    <p className="text-sm sm:text-base text-white/80 font-semibold whitespace-nowrap">Launching 15 September 2025</p>
+                    <p className="text-sm sm:text-base text-white/80 font-semibold">Launching 15 September 2025</p>
                 </div>
             </div>
           </div>

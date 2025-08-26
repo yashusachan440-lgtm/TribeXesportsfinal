@@ -8,7 +8,6 @@ import { DiscordIcon } from '@/components/icons/discord-icon';
 import { useState, useEffect } from 'react';
 import { WhatsAppIcon } from '@/components/icons/whatsapp-icon';
 import { LogoIcon } from '@/components/icons/logo-icon';
-import Confetti from '@/components/confetti';
 
 
 export default function Home() {
@@ -86,7 +85,6 @@ const HeroSection = () => {
               </div>
             </div>
             <div className="w-full md:w-auto mt-8 md:mt-0 relative flex flex-col items-center justify-center md:items-start md:ml-auto">
-                <Confetti />
                 <CountdownTimer targetDate="2025-09-15T00:00:00" />
                 <div className="mt-4 bg-black/30 backdrop-blur-sm rounded-full px-4 py-2 flex items-center whitespace-nowrap">
                     <span className="relative flex h-3 w-3 mr-3">

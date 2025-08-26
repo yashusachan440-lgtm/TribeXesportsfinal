@@ -4,7 +4,7 @@ import { Toaster } from "@/components/ui/toaster";
 import './globals.css';
 
 export const metadata: Metadata = {
-  title: 'Esports Firestorm',
+  title: 'Tribex Esports',
   description: 'The ultimate Free Fire experience is coming soon.',
 };
 

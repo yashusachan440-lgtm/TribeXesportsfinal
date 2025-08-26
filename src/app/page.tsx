@@ -80,7 +80,7 @@ const HeroSection = () => {
                     Join Discord
                   </Button>
                 </a>
-                <a href="https://chat.whatsapp.com/your-group-link" target="_blank" rel="noopener noreferrer">
+                <a href="https://chat.whatsapp.com/ESlMzHWHRKpKMsijRUS934?mode=ems_copy_t" target="_blank" rel="noopener noreferrer">
                   <Button size="lg" className="bg-[#25D366] hover:bg-[#1EBE57] text-white font-bold transition flex items-center gap-2 rounded-full w-full sm:w-auto justify-center">
                     <WhatsAppIcon className="h-6 w-6" /> Join Whatsapp
                   </Button>
@@ -118,7 +118,7 @@ const Footer = () => (
           </div>
           <div className="flex justify-center md:justify-end space-x-4 text-foreground/50">
             <a href="https://discord.gg/h52CbbBXFk" className="hover:text-white transition"><DiscordIcon className="h-5 w-5 sm:h-6 sm:w-6" /></a>
-            <a href="https://chat.whatsapp.com/your-group-link" target="_blank" rel="noopener noreferrer" className="hover:text-white transition"><WhatsAppIcon className="h-5 w-5 sm:h-6 sm:w-6" /></a>
+            <a href="https://chat.whatsapp.com/ESlMzHWHRKpKMsijRUS934?mode=ems_copy_t" target="_blank" rel="noopener noreferrer" className="hover:text-white transition"><WhatsAppIcon className="h-5 w-5 sm:h-6 sm:w-6" /></a>
             <a href="mailto:contact@tribexesports.com" className="hover:text-white transition"><Mail className="h-5 w-5 sm:h-6 sm:w-6" /></a>
             <a href="tel:+15551234567" className="hover:text-white transition"><Phone className="h-5 w-5 sm:h-6 sm:w-6" /></a>
           </div>
@@ -128,6 +128,7 @@ const Footer = () => (
   );
 
     
+
 
 
 

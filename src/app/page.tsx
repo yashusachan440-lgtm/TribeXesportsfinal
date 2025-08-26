@@ -6,7 +6,6 @@ import { Button } from '@/components/ui/button';
 import { ArrowRight, Play, Mail, Phone } from 'lucide-react';
 import CountdownTimer from '@/components/countdown-timer';
 import { DiscordIcon } from '@/components/icons/discord-icon';
-import { Header } from '@/components/header';
 import { useState } from 'react';
 import { WhatsAppIcon } from '@/components/icons/whatsapp-icon';
 import { YoutubeIcon } from '@/components/icons/youtube-icon';
@@ -17,7 +16,7 @@ import { Instagram } from 'lucide-react';
 export default function Home() {
   return (
     <div className="flex flex-col min-h-[100dvh] bg-background">
-      <Header />
+      
       <main className="flex-1">
         <HeroSection />
         <CountdownSection />
@@ -43,6 +42,12 @@ const HeroSection = () => {
             allowFullScreen
           ></iframe>
            <div className="absolute top-0 left-0 w-full h-full bg-black/60"></div>
+        </div>
+
+        <div className="absolute top-4 right-4 z-20">
+            <Button className="bg-gradient-to-r from-accent to-primary text-primary-foreground animate-pulse">
+                Pre-Register Now
+            </Button>
         </div>
   
         <div className="container mx-auto relative z-10 text-center">

@@ -3,7 +3,7 @@
 
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
-import { Mail, Phone } from 'lucide-react';
+import { Mail, Phone, PlayCircle } from 'lucide-react';
 import CountdownTimer from '@/components/countdown-timer';
 import { DiscordIcon } from '@/components/icons/discord-icon';
 import { useState, useEffect } from 'react';
@@ -53,13 +53,13 @@ const HeroSection = () => {
           <div className="container mx-auto flex items-center justify-between">
             <div className="flex items-center gap-2">
               <LogoIcon />
-              <h2 className="text-xl sm:text-2xl font-bold font-headline">
+              <h2 className="text-xl sm:text-2xl font-bold font-headline whitespace-nowrap">
                   <span className="text-primary">TribeX</span>
                   <span className="text-white"> Esports</span>
               </h2>
             </div>
-            <Button className="bg-gradient-to-r from-accent to-primary text-primary-foreground text-xs sm:text-sm">
-                Pre-Register Now
+            <Button size="sm" className="bg-gradient-to-r from-accent to-primary text-primary-foreground text-xs sm:text-sm whitespace-nowrap">
+              Pre-Register Now
             </Button>
           </div>
         </header>

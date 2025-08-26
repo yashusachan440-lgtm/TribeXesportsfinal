@@ -69,10 +69,8 @@ const HeroSection = () => {
                 <FreeFireLogo className="h-10 sm:h-14 md:h-16 lg:h-20 inline-block my-2" />
                 <span className="block text-white">Community Forever</span>
               </h1>
-              <div className="text-base sm:text-lg md:text-xl mb-8 max-w-lg text-white/80 mx-auto lg:mx-0">
-                <p>Something is about to shake the Indian esports scene…</p>
-                <p>A movement is rising—one that doesn’t care about fame, money, or background. Only skill will decide who stands at the top.</p>
-                <p>A place where players become family. Where tournaments are fair, opportunities are equal, and legends are made.</p>
+              <div className="text-sm sm:text-base md:text-lg mb-8 max-w-lg text-white/80 mx-auto lg:mx-0">
+                <p>Something is about to shake the Indian esports scene… A movement is rising—one that doesn’t care about fame, money, or background. Only skill will decide who stands at the top. A place where players become family. Where tournaments are fair, opportunities are equal, and legends are made.</p>
               </div>
               <div className="flex flex-col sm:flex-row gap-4 mb-10 justify-center lg:justify-start">
                 <a href="https://discord.gg/h52CbbBXFk" target="_blank" rel="noopener noreferrer">

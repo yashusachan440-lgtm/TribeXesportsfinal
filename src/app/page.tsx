@@ -65,9 +65,9 @@ const HeroSection = () => {
           <div className="flex flex-col lg:flex-row items-center justify-between gap-8 w-full">
             <div className="w-full max-w-2xl text-center lg:text-left flex flex-col items-center lg:items-start">
               <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6 font-headline leading-tight">
-                <span className="block bg-gradient-to-r from-primary to-accent text-transparent bg-clip-text animate-pulse">Revolutionizing</span>
+                <span className="block text-white">Revolutionizing</span>
                 <FreeFireLogo className="h-12 sm:h-16 md:h-20 lg:h-24 inline-block my-2" />
-                <span className="block bg-gradient-to-r from-primary to-accent text-transparent bg-clip-text animate-pulse">Community Forever</span>
+                <span className="block text-white">Community Forever</span>
               </h1>
               <p className="text-base sm:text-lg md:text-xl mb-8 max-w-lg text-white/80 mx-auto lg:mx-0">
                 Tribex Esports is launching with the biggest Free Fire tournaments, exclusive content, and a thriving community for competitive players.

@@ -26,7 +26,7 @@ export default function Home() {
 }
 
 const HeroSection = () => {
-    const videoSrc = `https://www.youtube.com/embed/JDY8XkebaeA?autoplay=1&mute=0&loop=1&playlist=JDY8XkebaeA&controls=0&showinfo=0&autohide=1&playsinline=1`;
+    const videoSrc = `https://www.youtube.com/embed/JDY8XkebaeA?autoplay=1&mute=1&loop=1&playlist=JDY8XkebaeA&controls=0&showinfo=0&autohide=1&playsinline=1`;
   
     return (
       <section id="home" className="relative h-screen flex flex-col justify-between text-white overflow-hidden">
@@ -122,6 +122,7 @@ const Footer = () => (
   );
 
     
+
 
 
 

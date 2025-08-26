@@ -30,7 +30,7 @@ const HeroSection = () => {
     const videoSrc = `https://www.youtube.com/embed/JDY8XkebaeA?autoplay=1&loop=1&playlist=JDY8XkebaeA&controls=0&showinfo=0&autohide=1&mute=1&playsinline=1`;
   
     return (
-      <section id="home" className="relative h-screen flex items-center justify-center text-white overflow-hidden">
+      <section id="home" className="relative h-screen flex items-center justify-start text-white overflow-hidden">
         <div className="absolute top-0 left-0 w-full h-full z-0 overflow-hidden">
           <iframe
             className="absolute top-1/2 left-1/2 w-full h-full object-cover transform -translate-x-1/2 -translate-y-1/2"
@@ -50,24 +50,26 @@ const HeroSection = () => {
             </Button>
         </div>
   
-        <div className="container mx-auto relative z-10 text-center">
-            <h1 className="text-4xl md:text-6xl font-bold mb-6 font-headline">
-              <span className="block">The Ultimate</span>
-              <span className="block text-primary">Free Fire</span>
-              <span className="block">Experience</span>
-            </h1>
-            <p className="text-lg md:text-xl mb-8 max-w-lg mx-auto text-white/80">
-              Tribex Esports is launching with the biggest Free Fire tournaments, exclusive content, and a thriving community for competitive players.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground font-bold transition transform hover:scale-105">
-                Join Waitlist <ArrowRight className="ml-2" />
-              </Button>
-              <Button size="lg" variant="outline" className="border-2 border-white/80 bg-transparent hover:bg-white hover:text-black transition transform hover:scale-105">
-                Watch Trailer <Play className="ml-2" />
-              </Button>
+        <div className="container mx-auto relative z-10 text-left">
+            <div className="max-w-2xl">
+              <h1 className="text-5xl md:text-7xl font-bold mb-6 font-headline leading-tight">
+                <span className="block">The Ultimate</span>
+                <span className="block text-primary bg-clip-text text-transparent bg-gradient-to-r from-primary to-accent">Free Fire</span>
+                <span className="block">Experience</span>
+              </h1>
+              <p className="text-lg md:text-xl mb-8 max-w-lg text-white/80">
+                Tribex Esports is launching with the biggest Free Fire tournaments, exclusive content, and a thriving community for competitive players.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4">
+                <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground font-bold transition transform hover:scale-105 shadow-lg shadow-primary/30">
+                  Join Waitlist <ArrowRight className="ml-2" />
+                </Button>
+                <Button size="lg" variant="outline" className="border-2 border-white/80 bg-transparent hover:bg-white hover:text-black font-bold transition transform hover:scale-105">
+                  Watch Trailer <Play className="ml-2" />
+                </Button>
+              </div>
             </div>
-             <div className="absolute bottom-10 left-1/2 -translate-x-1/2 bg-black/70 backdrop-blur-sm p-4 rounded-lg shadow-lg flex gap-4 items-center">
+             <div className="absolute bottom-10 left-4 bg-black/70 backdrop-blur-sm p-4 rounded-lg shadow-lg flex gap-4 items-center">
               <div className="flex items-center">
                 <div className="bg-red-500 rounded-full w-3 h-3 mr-2 animate-ping"></div>
                 <span className="text-sm font-bold uppercase tracking-widest">Launching Soon</span>
@@ -104,3 +106,4 @@ const Footer = () => (
       </div>
     </footer>
   );
+

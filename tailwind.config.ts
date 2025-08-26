@@ -23,6 +23,7 @@ export default {
         display: ['Cinzel', 'serif'],
         poppins: ['Poppins', 'sans-serif'],
         rubik: ['Rubik', 'sans-serif'],
+        jost: ['Jost', 'sans-serif'],
         code: ['monospace'],
       },
       colors: {

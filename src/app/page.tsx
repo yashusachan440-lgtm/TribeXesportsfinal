@@ -104,7 +104,7 @@ const Footer = () => (
             &copy; {new Date().getFullYear()} Tribex Esports. All rights reserved.
           </div>
           <div className="flex justify-center md:justify-end space-x-4 text-foreground/50">
-            <a href="#" className="hover:text-white transition"><DiscordIcon className="h-6 w-6" /></a>
+            <a href="https://discord.gg/h52CbbBXFk" className="hover:text-white transition"><DiscordIcon className="h-6 w-6" /></a>
             <a href="#" className="hover:text-white transition"><WhatsAppIcon className="h-6 w-6" /></a>
             <a href="mailto:contact@tribexesports.com" className="hover:text-white transition"><Mail className="h-6 w-6" /></a>
             <a href="tel:+15551234567" className="hover:text-white transition"><Phone className="h-6 w-6" /></a>

@@ -27,7 +27,7 @@ const HeroSection = () => {
     const videoSrc = `https://www.youtube.com/embed/JDY8XkebaeA?autoplay=1&loop=1&playlist=JDY8XkebaeA&controls=0&showinfo=0&autohide=1&mute=1&playsinline=1`;
   
     return (
-      <section id="home" className="relative h-screen flex items-center justify-start text-white overflow-hidden">
+      <section id="home" className="relative h-screen flex items-center justify-center text-white overflow-hidden">
         <div className="absolute top-0 left-0 w-full h-full z-0 overflow-hidden">
           <iframe
             className="absolute top-1/2 left-1/2 w-full h-full object-cover transform -translate-x-1/2 -translate-y-1/2"
@@ -43,30 +43,30 @@ const HeroSection = () => {
 
         <div className="absolute top-4 left-4 z-20 flex items-center gap-2">
             <LogoIcon />
-            <h2 className="text-2xl font-bold font-headline">
+            <h2 className="text-xl sm:text-2xl font-bold font-headline">
                 <span className="text-primary">TribeX</span>
                 <span className="text-white"> Esports</span>
             </h2>
         </div>
 
         <div className="absolute top-4 right-4 z-20">
-            <Button className="bg-gradient-to-r from-accent to-primary text-primary-foreground animate-pulse">
+            <Button className="bg-gradient-to-r from-accent to-primary text-primary-foreground animate-pulse text-xs sm:text-sm">
                 Pre-Register Now
             </Button>
         </div>
   
-        <div className="container mx-auto relative z-10">
-          <div className="flex items-center justify-between">
-            <div className="max-w-2xl text-left">
+        <div className="container mx-auto relative z-10 px-4">
+          <div className="flex flex-col md:flex-row items-center justify-between gap-8 md:gap-4">
+            <div className="max-w-2xl text-center md:text-left">
               <h1 className="text-5xl md:text-7xl font-bold mb-6 font-headline leading-tight">
                 <span className="block">The Ultimate</span>
                 <span className="block text-primary bg-clip-text text-transparent bg-gradient-to-r from-primary to-accent">Free Fire</span>
                 <span className="block">Experience</span>
               </h1>
-              <p className="text-lg md:text-xl mb-8 max-w-lg text-white/80">
+              <p className="text-base sm:text-lg md:text-xl mb-8 max-w-lg text-white/80 mx-auto md:mx-0">
                 Tribex Esports is launching with the biggest Free Fire tournaments, exclusive content, and a thriving community for competitive players.
               </p>
-              <div className="flex flex-col sm:flex-row gap-4 mb-10">
+              <div className="flex flex-col sm:flex-row gap-4 mb-10 justify-center md:justify-start">
                 <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground font-bold transition transform hover:scale-105 shadow-lg shadow-primary/30">
                   Join Waitlist <ArrowRight className="ml-2" />
                 </Button>
@@ -75,7 +75,7 @@ const HeroSection = () => {
                 </Button>
               </div>
             </div>
-            <div className="hidden md:block">
+            <div className="w-full md:w-auto mt-8 md:mt-0">
                 <CountdownTimer targetDate="2025-09-01T00:00:00" />
             </div>
           </div>

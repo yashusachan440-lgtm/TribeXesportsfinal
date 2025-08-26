@@ -22,6 +22,7 @@ export default {
         headline: ['Signika', 'sans-serif'],
         display: ['Cinzel', 'serif'],
         poppins: ['Poppins', 'sans-serif'],
+        rubik: ['Rubik', 'sans-serif'],
         code: ['monospace'],
       },
       colors: {

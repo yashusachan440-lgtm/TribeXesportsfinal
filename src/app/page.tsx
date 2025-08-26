@@ -56,11 +56,11 @@ const HeroSection = () => {
                 <span className="text-primary">TRIBEX</span> <span className="text-white">Esports</span>
               </h1>
               <div className="flex flex-col sm:flex-row items-center justify-center w-full space-y-2 sm:space-y-0 sm:space-x-2 text-center mb-6">
-                <h2 className="text-lg sm:text-xl md:text-2xl font-semibold text-white/90 font-poppins">
+                <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold text-white/90 font-rubik uppercase">
                   Revolutionizing
                 </h2>
                 <FreeFireLogo className="h-12 sm:h-14 md:h-16" />
-                <h2 className="text-lg sm:text-xl md:text-2xl font-semibold text-white/90 font-poppins">
+                <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold text-white/90 font-rubik uppercase">
                   Community
                 </h2>
               </div>
@@ -122,6 +122,7 @@ const Footer = () => (
   );
 
     
+
 
 
 

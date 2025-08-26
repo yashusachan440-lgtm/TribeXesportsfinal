@@ -69,9 +69,11 @@ const HeroSection = () => {
                 <FreeFireLogo className="h-10 sm:h-14 md:h-16 lg:h-20 inline-block my-2" />
                 <span className="block text-white">Community Forever</span>
               </h1>
-              <p className="text-base sm:text-lg md:text-xl mb-8 max-w-lg text-white/80 mx-auto lg:mx-0">
-                Tribex Esports is launching with the biggest Free Fire tournaments, exclusive content, and a thriving community for competitive players.
-              </p>
+              <div className="text-base sm:text-lg md:text-xl mb-8 max-w-lg text-white/80 mx-auto lg:mx-0 space-y-4">
+                <p>Something is about to shake the Indian esports scene…</p>
+                <p>A movement is rising—one that doesn’t care about fame, money, or background. Only skill will decide who stands at the top.</p>
+                <p>A place where players become family. Where tournaments are fair, opportunities are equal, and legends are made.</p>
+              </div>
               <div className="flex flex-col sm:flex-row gap-4 mb-10 justify-center lg:justify-start">
                 <a href="https://discord.gg/h52CbbBXFk" target="_blank" rel="noopener noreferrer">
                   <Button size="lg" className="bg-[#5865F2] hover:bg-[#4f5bda] text-white font-bold transition flex items-center gap-2 rounded-full w-full sm:w-auto justify-center">
@@ -125,5 +127,3 @@ const Footer = () => (
       </div>
     </footer>
   );
-
-    

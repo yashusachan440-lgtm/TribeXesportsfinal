@@ -21,6 +21,7 @@ export default {
         body: ['Space Grotesk', 'sans-serif'],
         headline: ['Signika', 'sans-serif'],
         display: ['Cinzel', 'serif'],
+        poppins: ['Poppins', 'sans-serif'],
         code: ['monospace'],
       },
       colors: {

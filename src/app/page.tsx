@@ -79,13 +79,13 @@ const HeroSection = () => {
                   </Button>
                 </a>
                 <a href="https://chat.whatsapp.com/your-group-link" target="_blank" rel="noopener noreferrer">
-                  <Button size="lg" variant="outline" className="border-2 border-white/80 bg-transparent hover:bg-[#25D366] hover:text-white hover:border-[#25D366] font-bold transition transform hover:scale-105 rounded-full flex items-center gap-2">
+                  <Button size="lg" className="bg-[#25D366] hover:bg-[#1EBE57] text-white font-bold transition transform hover:scale-105 shadow-lg shadow-[#25D366]/30 flex items-center gap-2 rounded-full">
                     <WhatsAppIcon className="h-6 w-6" /> Join Whatsapp
                   </Button>
                 </a>
               </div>
             </div>
-            <div className="w-full md:w-auto mt-8 md:mt-0 relative flex flex-col items-center">
+            <div className="w-full md:w-auto mt-8 md:mt-0 relative flex flex-col items-center justify-center md:justify-start">
                 <Confetti />
                 <CountdownTimer targetDate="2025-09-01T00:00:00" />
                 <div className="mt-4 bg-black/30 backdrop-blur-sm rounded-full px-4 py-2 flex items-center whitespace-nowrap">

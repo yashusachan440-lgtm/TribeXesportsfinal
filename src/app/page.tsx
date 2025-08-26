@@ -32,7 +32,7 @@ export default function Home() {
 }
 
 const HeroSection = () => {
-    const videoSrc = `https://www.youtube.com/embed/JDY8XkebaeA?autoplay=1&loop=1&playlist=JDY8XkebaeA&controls=0&showinfo=0&autohide=1&mute=0&playsinline=1`;
+    const videoSrc = `https://www.youtube.com/embed/JDY8XkebaeA?autoplay=1&loop=1&playlist=JDY8XkebaeA&controls=0&showinfo=0&autohide=1&mute=1&playsinline=1`;
   
     return (
       <section id="home" className="relative h-screen flex flex-col justify-between text-white overflow-hidden">
@@ -58,7 +58,7 @@ const HeroSection = () => {
         <div className="container mx-auto relative z-10 px-4 flex-1 flex flex-col justify-center">
           <div className="flex flex-col lg:flex-row items-center justify-between gap-8 w-full">
             <div className="w-full max-w-4xl text-center lg:text-left flex flex-col items-center lg:items-start">
-              <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-extrabold mb-4 font-display leading-tight">
+              <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-extrabold mb-4 font-headline leading-tight">
                 <span className="text-primary">TribeX</span> <span className="text-white">Esports</span>
               </h1>
               <div className="flex items-center justify-center lg:justify-start gap-2 sm:gap-4 mb-6">

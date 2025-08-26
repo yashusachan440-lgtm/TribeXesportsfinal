@@ -55,7 +55,7 @@ const HeroSection = () => {
         </div>
 
         <div className="absolute top-4 right-4 z-20">
-            <Button className="bg-gradient-to-r from-accent to-primary text-primary-foreground animate-pulse text-xs sm:text-sm">
+            <Button className="bg-gradient-to-r from-accent to-primary text-primary-foreground text-xs sm:text-sm">
                 Pre-Register Now
             </Button>
         </div>
@@ -73,13 +73,13 @@ const HeroSection = () => {
               </p>
               <div className="flex flex-col sm:flex-row gap-4 mb-10 justify-center md:justify-start">
                 <a href="https://discord.gg/h52CbbBXFk" target="_blank" rel="noopener noreferrer">
-                  <Button size="lg" className="bg-[#5865F2] hover:bg-[#4f5bda] text-white font-bold transition transform hover:scale-105 shadow-lg shadow-[#5865F2]/30 flex items-center gap-2 rounded-full">
+                  <Button size="lg" className="bg-[#5865F2] hover:bg-[#4f5bda] text-white font-bold transition transform hover:scale-105 flex items-center gap-2 rounded-full">
                     <DiscordIcon className="h-6 w-6" />
                     Join Discord
                   </Button>
                 </a>
                 <a href="https://chat.whatsapp.com/your-group-link" target="_blank" rel="noopener noreferrer">
-                  <Button size="lg" className="bg-[#25D366] hover:bg-[#1EBE57] text-white font-bold transition transform hover:scale-105 shadow-lg shadow-[#25D366]/30 flex items-center gap-2 rounded-full">
+                  <Button size="lg" className="bg-[#25D366] hover:bg-[#1EBE57] text-white font-bold transition transform hover:scale-105 flex items-center gap-2 rounded-full">
                     <WhatsAppIcon className="h-6 w-6" /> Join Whatsapp
                   </Button>
                 </a>

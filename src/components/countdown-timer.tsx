@@ -4,9 +4,9 @@
 import { useState, useEffect } from 'react';
 
 const CountdownBox = ({ value, label }: { value: string; label: string }) => (
-  <div className="bg-white/10 backdrop-blur-md rounded-lg border border-white/20 py-2 px-3 sm:py-4 sm:px-6 md:py-6 md:px-8 text-center w-20 sm:w-24 md:w-32">
-    <div className="text-3xl sm:text-4xl md:text-6xl font-bold font-headline">{value}</div>
-    <div className="text-xs sm:text-sm md:text-base opacity-80 uppercase tracking-widest">{label}</div>
+  <div className="bg-white/10 backdrop-blur-md rounded-lg border border-white/20 p-2 sm:p-3 md:py-4 md:px-6 text-center w-16 sm:w-20 md:w-28">
+    <div className="text-2xl sm:text-4xl md:text-6xl font-bold font-headline">{value}</div>
+    <div className="text-[10px] sm:text-xs md:text-base opacity-80 uppercase tracking-widest">{label}</div>
   </div>
 );
 
@@ -48,7 +48,7 @@ const CountdownTimer = ({ targetDate }: { targetDate: string }) => {
   const format = (num: number) => num.toString().padStart(2, '0');
 
   return (
-    <div className="flex justify-center space-x-2 sm:space-x-4">
+    <div className="flex justify-center space-x-2 sm:space-x-3 md:space-x-4">
       <CountdownBox value={format(timeLeft.days)} label="Days" />
       <CountdownBox value={format(timeLeft.hours)} label="Hours" />
       <CountdownBox value={format(timeLeft.minutes)} label="Minutes" />

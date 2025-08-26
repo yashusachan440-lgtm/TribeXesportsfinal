@@ -3,7 +3,7 @@
 
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
-import { Play, Mail, Phone } from 'lucide-react';
+import { Mail, Phone } from 'lucide-react';
 import CountdownTimer from '@/components/countdown-timer';
 import { DiscordIcon } from '@/components/icons/discord-icon';
 import { useState, useEffect } from 'react';
@@ -49,48 +49,49 @@ const HeroSection = () => {
            <div className="absolute top-0 left-0 w-full h-full bg-black/60"></div>
         </div>
 
-        <div className="absolute top-4 left-4 z-20 flex items-center gap-2">
-            <LogoIcon />
-            <h2 className="text-xl sm:text-2xl font-bold font-headline">
-                <span className="text-primary">TribeX</span>
-                <span className="text-white"> Esports</span>
-            </h2>
-        </div>
-
-        <div className="absolute top-4 right-4 z-20">
+        <header className="absolute top-0 left-0 right-0 z-20 p-4">
+          <div className="container mx-auto flex items-center justify-between">
+            <div className="flex items-center gap-2">
+              <LogoIcon />
+              <h2 className="text-xl sm:text-2xl font-bold font-headline">
+                  <span className="text-primary">TribeX</span>
+                  <span className="text-white"> Esports</span>
+              </h2>
+            </div>
             <Button className="bg-gradient-to-r from-accent to-primary text-primary-foreground text-xs sm:text-sm">
                 Pre-Register Now
             </Button>
-        </div>
+          </div>
+        </header>
   
-        <div className="container mx-auto relative z-10 px-4 flex-1 flex items-center">
-          <div className="flex flex-col md:flex-row items-center justify-between gap-8 md:gap-4 w-full">
-            <div className="w-full max-w-2xl text-center md:text-left flex flex-col items-center md:items-start">
-              <h1 className="text-5xl md:text-7xl font-bold mb-6 font-headline leading-tight">
+        <div className="container mx-auto relative z-10 px-4 flex-1 flex flex-col justify-center">
+          <div className="flex flex-col lg:flex-row items-center justify-between gap-8 w-full">
+            <div className="w-full max-w-2xl text-center lg:text-left flex flex-col items-center lg:items-start">
+              <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6 font-headline leading-tight">
                 <span className="block">The Ultimate</span>
-                <FreeFireLogo className="h-16 md:h-24 inline-block my-2" />
+                <FreeFireLogo className="h-12 sm:h-16 md:h-20 lg:h-24 inline-block my-2" />
                 <span className="block">Experience</span>
               </h1>
-              <p className="text-base sm:text-lg md:text-xl mb-8 max-w-lg text-white/80 mx-auto md:mx-0">
+              <p className="text-base sm:text-lg md:text-xl mb-8 max-w-lg text-white/80 mx-auto lg:mx-0">
                 Tribex Esports is launching with the biggest Free Fire tournaments, exclusive content, and a thriving community for competitive players.
               </p>
-              <div className="flex flex-col sm:flex-row gap-4 mb-10 justify-center md:justify-start">
+              <div className="flex flex-col sm:flex-row gap-4 mb-10 justify-center lg:justify-start">
                 <a href="https://discord.gg/h52CbbBXFk" target="_blank" rel="noopener noreferrer">
-                  <Button size="lg" className="bg-[#5865F2] hover:bg-[#4f5bda] text-white font-bold transition flex items-center gap-2 rounded-full">
+                  <Button size="lg" className="bg-[#5865F2] hover:bg-[#4f5bda] text-white font-bold transition flex items-center gap-2 rounded-full w-full sm:w-auto justify-center">
                     <DiscordIcon className="h-6 w-6" />
                     Join Discord
                   </Button>
                 </a>
                 <a href="https://chat.whatsapp.com/your-group-link" target="_blank" rel="noopener noreferrer">
-                  <Button size="lg" className="bg-[#25D366] hover:bg-[#1EBE57] text-white font-bold transition flex items-center gap-2 rounded-full">
+                  <Button size="lg" className="bg-[#25D366] hover:bg-[#1EBE57] text-white font-bold transition flex items-center gap-2 rounded-full w-full sm:w-auto justify-center">
                     <WhatsAppIcon className="h-6 w-6" /> Join Whatsapp
                   </Button>
                 </a>
               </div>
             </div>
-            <div className="w-full md:w-auto mt-8 md:mt-0 relative flex flex-col items-center justify-center md:ml-auto">
-            <div className="absolute inset-0 -z-10">
-                <LottiePlayer animationData={confettiAnimation} loop={true} />
+            <div className="w-full lg:w-auto mt-8 lg:mt-0 relative flex flex-col items-center justify-center">
+              <div className="absolute inset-0 -z-10 flex items-center justify-center">
+                  <LottiePlayer animationData={confettiAnimation} loop={true} className="w-full h-full" />
               </div>
               <div className="relative z-10 flex flex-col items-center">
                 <CountdownTimer targetDate="2025-09-15T00:00:00" />
@@ -99,7 +100,7 @@ const HeroSection = () => {
                         <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>
                         <span className="relative inline-flex rounded-full h-3 w-3 bg-red-500"></span>
                     </span>
-                    <p className="text-sm sm:text-base text-white/80 font-semibold">Launching 15 September 2025</p>
+                    <p className="text-xs sm:text-sm md:text-base text-white/80 font-semibold">Launching 15 September 2025</p>
                 </div>
               </div>
             </div>
@@ -111,21 +112,19 @@ const HeroSection = () => {
   };
 
 const Footer = () => (
-    <footer id="contact" className="bg-transparent py-8 relative z-10">
+    <footer id="contact" className="bg-transparent py-6 relative z-10">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-col md:flex-row items-center justify-between gap-6">
-          <div className="text-center md:text-left text-foreground/50 text-sm">
+        <div className="flex flex-col md:flex-row items-center justify-between gap-4">
+          <div className="text-center md:text-left text-foreground/50 text-xs sm:text-sm">
             &copy; {new Date().getFullYear()} Tribex Esports. All rights reserved.
           </div>
           <div className="flex justify-center md:justify-end space-x-4 text-foreground/50">
-            <a href="https://discord.gg/h52CbbBXFk" className="hover:text-white transition"><DiscordIcon className="h-6 w-6" /></a>
-            <a href="https://chat.whatsapp.com/your-group-link" target="_blank" rel="noopener noreferrer" className="hover:text-white transition"><WhatsAppIcon className="h-6 w-6" /></a>
-            <a href="mailto:contact@tribexesports.com" className="hover:text-white transition"><Mail className="h-6 w-6" /></a>
-            <a href="tel:+15551234567" className="hover:text-white transition"><Phone className="h-6 w-6" /></a>
+            <a href="https://discord.gg/h52CbbBXFk" className="hover:text-white transition"><DiscordIcon className="h-5 w-5 sm:h-6 sm:w-6" /></a>
+            <a href="https://chat.whatsapp.com/your-group-link" target="_blank" rel="noopener noreferrer" className="hover:text-white transition"><WhatsAppIcon className="h-5 w-5 sm:h-6 sm:w-6" /></a>
+            <a href="mailto:contact@tribexesports.com" className="hover:text-white transition"><Mail className="h-5 w-5 sm:h-6 sm:w-6" /></a>
+            <a href="tel:+15551234567" className="hover:text-white transition"><Phone className="h-5 w-5 sm:h-6 sm:w-6" /></a>
           </div>
         </div>
       </div>
     </footer>
   );
-
-    

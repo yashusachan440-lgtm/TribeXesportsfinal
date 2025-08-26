@@ -11,14 +11,14 @@ export function LogoIcon(props: SVGProps<SVGSVGElement>) {
       {...props}
     >
       <g>
-        <path d="M50 15 L35 22.5 L35 45 L50 37.5 Z" fill="#FF0000" />
-        <path d="M35 45 L35 77.5 L50 85 L50 52.5 Z" fill="#FF0000" />
-        <path d="M50 15 L65 22.5 L65 45 L50 37.5 Z" fill="#FFFFFF" />
-        <path d="M65 45 L65 77.5 L50 85 L50 52.5 Z" fill="#FFFFFF" />
-        <path d="M50 15 L35 22.5 L50 30 L65 22.5 Z" fill="none">
-            <path d="M50 15 L35 22.5 L50 30 Z" fill="#FF0000" />
-            <path d="M50 15 L65 22.5 L50 30 Z" fill="#FFFFFF" />
-        </path>
+        <path d="M50 15 L25 29 L25 71 L50 85 L75 71 L75 29 Z" fill="none" />
+        <path d="M50,15 L25,29 v42 l25,14 l25,-14 v-42 Z" fill="none" />
+        {/* Top part */}
+        <path d="M50 15 L75 29 L50 43 L25 29 Z" fill="#FFFFFF" />
+        {/* Left part */}
+        <path d="M25 29 L25 71 L50 85 L50 43 Z" fill="#FF0000" />
+        {/* Right part */}
+        <path d="M75 29 L75 71 L50 85 L50 43 Z" fill="#FFFFFF" />
       </g>
     </svg>
   );

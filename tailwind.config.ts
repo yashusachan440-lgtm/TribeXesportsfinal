@@ -24,6 +24,7 @@ export default {
         poppins: ['Poppins', 'sans-serif'],
         rubik: ['Rubik', 'sans-serif'],
         jost: ['Jost', 'sans-serif'],
+        'open-sans': ['"Open Sans"', 'sans-serif'],
         code: ['monospace'],
       },
       colors: {

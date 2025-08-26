@@ -9,6 +9,7 @@ import { DiscordIcon } from '@/components/icons/discord-icon';
 import { useState } from 'react';
 import { WhatsAppIcon } from '@/components/icons/whatsapp-icon';
 import { LogoIcon } from '@/components/icons/logo-icon';
+import Confetti from '@/components/confetti';
 
 
 export default function Home() {
@@ -75,7 +76,8 @@ const HeroSection = () => {
                 </Button>
               </div>
             </div>
-            <div className="w-full md:w-auto mt-8 md:mt-0">
+            <div className="w-full md:w-auto mt-8 md:mt-0 relative">
+                <Confetti />
                 <CountdownTimer targetDate="2025-09-01T00:00:00" />
             </div>
           </div>

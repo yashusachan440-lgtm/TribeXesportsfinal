@@ -49,8 +49,9 @@ const HeroSection = () => {
             </Button>
         </div>
   
-        <div className="container mx-auto relative z-10 text-left">
-            <div className="max-w-2xl">
+        <div className="container mx-auto relative z-10">
+          <div className="flex items-center justify-between">
+            <div className="max-w-2xl text-left">
                 <div className="mb-8">
                     <h2 className="text-2xl font-bold font-headline">
                         <span className="text-primary">TribeX</span>
@@ -73,14 +74,11 @@ const HeroSection = () => {
                   Watch Trailer <Play className="ml-2" />
                 </Button>
               </div>
+            </div>
+            <div className="hidden md:block">
                 <CountdownTimer targetDate="2025-09-01T00:00:00" />
             </div>
-             <div className="absolute bottom-10 left-4 bg-black/70 backdrop-blur-sm p-4 rounded-lg shadow-lg flex gap-4 items-center">
-              <div className="flex items-center">
-                <div className="bg-red-500 rounded-full w-3 h-3 mr-2 animate-ping"></div>
-                <span className="text-sm font-bold uppercase tracking-widest">Launching Soon</span>
-              </div>
-            </div>
+          </div>
         </div>
       </section>
     );

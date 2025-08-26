@@ -25,6 +25,7 @@ export default {
         rubik: ['Rubik', 'sans-serif'],
         jost: ['Jost', 'sans-serif'],
         'open-sans': ['"Open Sans"', 'sans-serif'],
+        montserrat: ['Montserrat', 'sans-serif'],
         code: ['monospace'],
       },
       colors: {

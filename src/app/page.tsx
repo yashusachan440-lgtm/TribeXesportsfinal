@@ -52,7 +52,7 @@ const HeroSection = () => {
         <div className="container mx-auto relative z-10 px-4 flex-1 flex flex-col justify-center">
           <div className="flex flex-col lg:flex-row items-center justify-between gap-8 w-full">
             <div className="w-full max-w-4xl text-center flex flex-col items-center">
-              <h1 className="text-2xl sm:text-3xl md:text-5xl font-extrabold mb-4 font-poppins leading-tight whitespace-nowrap mt-6 sm:mt-10">
+              <h1 className="text-4xl sm:text-5xl md:text-7xl font-extrabold mb-4 font-poppins leading-tight whitespace-nowrap mt-6 sm:mt-10">
                 <span className="text-primary">TRIBEX</span> <span className="text-white">Esports</span>
               </h1>
               <div className="flex flex-col sm:flex-row items-center justify-center gap-y-2 sm:gap-x-4 mb-6">
@@ -122,6 +122,7 @@ const Footer = () => (
   );
 
     
+
 
 
 

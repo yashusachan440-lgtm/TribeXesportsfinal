@@ -70,12 +70,14 @@ const HeroSection = () => {
                 <a href="https://discord.gg/h52CbbBXFk" target="_blank" rel="noopener noreferrer">
                   <Button size="lg" className="bg-[#5865F2] hover:bg-[#4f5bda] text-white font-bold transition transform hover:scale-105 shadow-lg shadow-[#5865F2]/30 flex items-center gap-2 rounded-full">
                     <DiscordIcon className="h-6 w-6" />
-                    JOIN US
+                    Join Discord
                   </Button>
                 </a>
-                <Button size="lg" variant="outline" className="border-2 border-white/80 bg-transparent hover:bg-white hover:text-black font-bold transition transform hover:scale-105 rounded-full">
-                  Watch Trailer <Play className="ml-2" />
-                </Button>
+                <a href="https://chat.whatsapp.com/your-group-link" target="_blank" rel="noopener noreferrer">
+                  <Button size="lg" variant="outline" className="border-2 border-white/80 bg-transparent hover:bg-white hover:text-black font-bold transition transform hover:scale-105 rounded-full flex items-center gap-2">
+                    <WhatsAppIcon className="h-6 w-6" /> Join Whatsapp
+                  </Button>
+                </a>
               </div>
             </div>
             <div className="w-full md:w-auto mt-8 md:mt-0 relative flex flex-col items-center">
@@ -113,3 +115,4 @@ const Footer = () => (
       </div>
     </footer>
   );
+

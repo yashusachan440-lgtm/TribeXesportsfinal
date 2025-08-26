@@ -120,7 +120,7 @@ const Footer = () => (
             <a href="https://discord.gg/h52CbbBXFk" className="hover:text-white transition"><DiscordIcon className="h-5 w-5 sm:h-6 sm:w-6" /></a>
             <a href="https://chat.whatsapp.com/ESlMzHWHRKpKMsijRUS934?mode=ems_copy_t" target="_blank" rel="noopener noreferrer" className="hover:text-white transition"><WhatsAppIcon className="h-5 w-5 sm:h-6 sm:w-6" /></a>
             <a href="mailto:contact@tribexesports.com" className="hover:text-white transition"><Mail className="h-5 w-5 sm:h-6 sm:w-6" /></a>
-            <a href="tel:+15551234567" className="hover:text-white transition"><Phone className="h-5 w-5 sm:h-6 sm:w-6" /></a>
+            <a href="tel:+919140934524" className="hover:text-white transition"><Phone className="h-5 w-5 sm:h-6 sm:w-6" /></a>
           </div>
         </div>
       </div>
@@ -128,6 +128,7 @@ const Footer = () => (
   );
 
     
+
 
 
 

@@ -43,6 +43,13 @@ const HeroSection = () => {
            <div className="absolute top-0 left-0 w-full h-full bg-black/60"></div>
         </div>
 
+        <div className="absolute top-4 left-4 z-20">
+            <h2 className="text-2xl font-bold font-headline">
+                <span className="text-primary">TribeX</span>
+                <span className="text-white"> Esports</span>
+            </h2>
+        </div>
+
         <div className="absolute top-4 right-4 z-20">
             <Button className="bg-gradient-to-r from-accent to-primary text-primary-foreground animate-pulse">
                 Pre-Register Now
@@ -52,12 +59,6 @@ const HeroSection = () => {
         <div className="container mx-auto relative z-10">
           <div className="flex items-center justify-between">
             <div className="max-w-2xl text-left">
-                <div className="mb-8">
-                    <h2 className="text-2xl font-bold font-headline">
-                        <span className="text-primary">TribeX</span>
-                        <span className="text-white"> Esports</span>
-                    </h2>
-                </div>
               <h1 className="text-5xl md:text-7xl font-bold mb-6 font-headline leading-tight">
                 <span className="block">The Ultimate</span>
                 <span className="block text-primary bg-clip-text text-transparent bg-gradient-to-r from-primary to-accent">Free Fire</span>

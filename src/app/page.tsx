@@ -67,7 +67,7 @@ const HeroSection = () => {
                 </h2>
                 <FreeFireLogo className="h-8 sm:h-10 md:h-12" />
                 <h2 className="text-lg sm:text-xl md:text-2xl font-semibold text-white/90 font-display">
-                  Community Forever
+                  Community
                 </h2>
               </div>
               <div className="text-sm sm:text-base md:text-lg mb-8 max-w-2xl text-white/80 mx-auto lg:mx-0">
@@ -128,6 +128,7 @@ const Footer = () => (
   );
 
     
+
 
 
 

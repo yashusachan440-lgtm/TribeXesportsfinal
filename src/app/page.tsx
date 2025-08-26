@@ -67,15 +67,15 @@ const HeroSection = () => {
               <div className="text-sm sm:text-base md:text-lg mb-8 max-w-2xl text-white/80 mx-auto lg:mx-0">
                 <p>Something is about to shake the Indian esports scene… A movement is rising—one that doesn’t care about fame, money, or background. Only skill will decide who stands at the top. A place where players become family. Where tournaments are fair, opportunities are equal, and legends are made.</p>
               </div>
-              <div className="flex flex-col sm:flex-row gap-4 mb-10 justify-center lg:justify-start">
-                <a href="https://discord.gg/h52CbbBXFk" target="_blank" rel="noopener noreferrer">
-                  <Button size="lg" className="bg-[#5865F2] hover:bg-[#4f5bda] text-white font-bold transition flex items-center gap-2 rounded-full w-full sm:w-auto justify-center">
+              <div className="flex flex-col sm:flex-row gap-4 mb-10 justify-center lg:justify-start w-full sm:w-auto">
+                <a href="https://discord.gg/h52CbbBXFk" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto">
+                  <Button size="lg" className="bg-[#5865F2] hover:bg-[#4f5bda] text-white font-bold transition flex items-center gap-2 rounded-full w-full justify-center">
                     <DiscordIcon className="h-6 w-6" />
                     Join Discord
                   </Button>
                 </a>
-                <a href="https://chat.whatsapp.com/ESlMzHWHRKpKMsijRUS934?mode=ems_copy_t" target="_blank" rel="noopener noreferrer">
-                  <Button size="lg" className="bg-[#25D366] hover:bg-[#1EBE57] text-white font-bold transition flex items-center gap-2 rounded-full w-full sm:w-auto justify-center">
+                <a href="https://chat.whatsapp.com/ESlMzHWHRKpKMsijRUS934?mode=ems_copy_t" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto">
+                  <Button size="lg" className="bg-[#25D366] hover:bg-[#1EBE57] text-white font-bold transition flex items-center gap-2 rounded-full w-full justify-center">
                     <WhatsAppIcon className="h-6 w-6" /> Join Whatsapp
                   </Button>
                 </a>
@@ -122,6 +122,7 @@ const Footer = () => (
   );
 
     
+
 
 
 

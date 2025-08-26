@@ -1,4 +1,3 @@
-
 'use client';
 
 import Image from 'next/image';
@@ -13,6 +12,12 @@ import Confetti from '@/components/confetti';
 
 
 export default function Home() {
+  const [isClient, setIsClient] = useState(false)
+
+  useEffect(() => {
+    setIsClient(true)
+  }, [])
+  
   return (
     <div className="flex flex-col min-h-[100dvh] bg-background">
       
@@ -57,7 +62,7 @@ const HeroSection = () => {
   
         <div className="container mx-auto relative z-10 px-4 flex-1 flex items-center">
           <div className="flex flex-col md:flex-row items-center justify-between gap-8 md:gap-4 w-full">
-            <div className="max-w-2xl text-center md:text-left">
+            <div className="w-full max-w-2xl text-center md:text-left flex flex-col items-center md:items-start">
               <h1 className="text-5xl md:text-7xl font-bold mb-6 font-headline leading-tight">
                 <span className="block">The Ultimate</span>
                 <span className="block text-primary bg-clip-text text-transparent bg-gradient-to-r from-primary to-accent">Free Fire</span>
@@ -74,7 +79,7 @@ const HeroSection = () => {
                   </Button>
                 </a>
                 <a href="https://chat.whatsapp.com/your-group-link" target="_blank" rel="noopener noreferrer">
-                  <Button size="lg" variant="outline" className="border-2 border-white/80 bg-transparent hover:bg-white hover:text-black font-bold transition transform hover:scale-105 rounded-full flex items-center gap-2">
+                  <Button size="lg" variant="outline" className="border-2 border-white/80 bg-transparent hover:bg-[#25D366] hover:text-white hover:border-[#25D366] font-bold transition transform hover:scale-105 rounded-full flex items-center gap-2">
                     <WhatsAppIcon className="h-6 w-6" /> Join Whatsapp
                   </Button>
                 </a>
@@ -115,4 +120,3 @@ const Footer = () => (
       </div>
     </footer>
   );
-

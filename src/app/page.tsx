@@ -3,7 +3,7 @@
 
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
-import { ArrowRight, Play, Mail, Phone } from 'lucide-react';
+import { Play, Mail, Phone } from 'lucide-react';
 import CountdownTimer from '@/components/countdown-timer';
 import { DiscordIcon } from '@/components/icons/discord-icon';
 import { useState, useEffect } from 'react';
@@ -11,6 +11,7 @@ import { WhatsAppIcon } from '@/components/icons/whatsapp-icon';
 import { LogoIcon } from '@/components/icons/logo-icon';
 import LottiePlayer from '@/components/lottie-player';
 import { FreeFireLogo } from '@/components/icons/free-fire-logo';
+import confettiAnimation from '@/../public/animations/confetti.json';
 
 
 export default function Home() {
@@ -31,11 +32,24 @@ export default function Home() {
 }
 
 const HeroSection = () => {
-    const videoSrc = `https://www.youtube.com/embed/JDY8XkebaeA?autoplay=1&loop=1&playlist=JDY8XkebaeA&controls=0&showinfo=0&autohide=1&mute=1&playsinline=1`;
+    const [videoPlaying, setVideoPlaying] = useState(false);
+    const videoSrc = `https://www.youtube.com/embed/JDY8XkebaeA?${videoPlaying ? 'autoplay=1&' : ''}loop=1&playlist=JDY8XkebaeA&controls=0&showinfo=0&autohide=1&mute=${videoPlaying ? '0' : '1'}&playsinline=1`;
   
     return (
       <section id="home" className="relative h-screen flex flex-col justify-between text-white overflow-hidden">
         <div className="absolute top-0 left-0 w-full h-full z-0 overflow-hidden">
+        {!videoPlaying && (
+            <div className="absolute inset-0 z-20 flex items-center justify-center bg-black/50">
+              <Button
+                variant="ghost"
+                size="icon"
+                className="w-24 h-24 text-white hover:bg-white/20 rounded-full"
+                onClick={() => setVideoPlaying(true)}
+              >
+                <Play className="w-16 h-16 fill-white" />
+              </Button>
+            </div>
+          )}
           <iframe
             className="absolute top-1/2 left-1/2 w-full h-full object-cover transform -translate-x-1/2 -translate-y-1/2"
             style={{ minWidth: '177.77vh', minHeight: '100vw' }}
@@ -88,6 +102,9 @@ const HeroSection = () => {
               </div>
             </div>
             <div className="w-full md:w-auto mt-8 md:mt-0 relative flex flex-col items-center justify-center md:ml-auto">
+            <div className="absolute inset-0 -z-10">
+                <LottiePlayer animationData={confettiAnimation} loop={true} />
+              </div>
               <div className="relative z-10 flex flex-col items-center">
                 <CountdownTimer targetDate="2025-09-15T00:00:00" />
                 <div className="mt-4 bg-black/30 backdrop-blur-sm rounded-full px-4 py-2 flex items-center whitespace-nowrap justify-center">
@@ -115,7 +132,7 @@ const Footer = () => (
           </div>
           <div className="flex justify-center md:justify-end space-x-4 text-foreground/50">
             <a href="https://discord.gg/h52CbbBXFk" className="hover:text-white transition"><DiscordIcon className="h-6 w-6" /></a>
-            <a href="#" className="hover:text-white transition"><WhatsAppIcon className="h-6 w-6" /></a>
+            <a href="https://chat.whatsapp.com/your-group-link" target="_blank" rel="noopener noreferrer" className="hover:text-white transition"><WhatsAppIcon className="h-6 w-6" /></a>
             <a href="mailto:contact@tribexesports.com" className="hover:text-white transition"><Mail className="h-6 w-6" /></a>
             <a href="tel:+15551234567" className="hover:text-white transition"><Phone className="h-6 w-6" /></a>
           </div>
@@ -123,3 +140,5 @@ const Footer = () => (
       </div>
     </footer>
   );
+
+    

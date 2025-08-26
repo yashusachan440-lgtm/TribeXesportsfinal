@@ -87,7 +87,7 @@ const HeroSection = () => {
   };
 
 const Footer = () => (
-    <footer id="contact" className="bg-primary/5 py-8">
+    <footer id="contact" className="bg-transparent py-8">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="text-center md:text-left text-foreground/50 text-sm">

@@ -51,11 +51,11 @@ const HeroSection = () => {
   
         <div className="container mx-auto relative z-10 px-4 flex-1 flex flex-col justify-center">
           <div className="flex flex-col lg:flex-row items-center justify-between gap-8 w-full">
-            <div className="w-full max-w-4xl text-center lg:text-left flex flex-col items-center lg:items-start">
-              <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-extrabold mb-4 font-poppins leading-tight">
+            <div className="w-full max-w-4xl text-center flex flex-col items-center">
+              <h1 className="text-5xl sm:text-6xl md:text-7xl font-extrabold mb-4 font-poppins leading-tight">
                 <span className="text-primary">TRIBEX</span> <span className="text-white">Esports</span>
               </h1>
-              <div className="flex items-center justify-center lg:justify-start gap-2 sm:gap-4 mb-6">
+              <div className="flex flex-col sm:flex-row items-center justify-center gap-y-2 sm:gap-x-4 mb-6">
                 <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold text-white/90 font-poppins">
                   Revolutionizing
                 </h2>
@@ -64,10 +64,10 @@ const HeroSection = () => {
                   Community
                 </h2>
               </div>
-              <div className="text-sm sm:text-base md:text-lg mb-8 max-w-2xl text-white/80 mx-auto lg:mx-0">
+              <div className="text-sm sm:text-base md:text-lg mb-8 max-w-2xl text-white/80 mx-auto">
                 <p>Something is about to shake the Indian esports scene… A movement is rising—one that doesn’t care about fame, money, or background. Only skill will decide who stands at the top. A place where players become family. Where tournaments are fair, opportunities are equal, and legends are made.</p>
               </div>
-              <div className="flex flex-col sm:flex-row gap-4 mb-10 justify-center lg:justify-start w-full sm:w-auto">
+              <div className="flex flex-col sm:flex-row gap-4 mb-10 justify-center w-full sm:w-auto">
                 <a href="https://discord.gg/h52CbbBXFk" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto">
                   <Button size="lg" className="bg-[#5865F2] hover:bg-[#4f5bda] text-white font-bold transition flex items-center gap-2 rounded-full w-full justify-center">
                     <DiscordIcon className="h-6 w-6" />
@@ -122,6 +122,7 @@ const Footer = () => (
   );
 
     
+
 
 
 

@@ -9,6 +9,8 @@ import { DiscordIcon } from '@/components/icons/discord-icon';
 import { useState, useEffect } from 'react';
 import { WhatsAppIcon } from '@/components/icons/whatsapp-icon';
 import { LogoIcon } from '@/components/icons/logo-icon';
+import LottiePlayer from '@/components/lottie-player';
+import confettiAnimation from '@/../public/animations/confetti.json';
 
 
 export default function Home() {
@@ -86,6 +88,10 @@ const HeroSection = () => {
               </div>
             </div>
             <div className="w-full md:w-auto mt-8 md:mt-0 relative flex flex-col items-center justify-center md:ml-auto">
+              <div className="absolute inset-0 z-0">
+                  <LottiePlayer animationData={confettiAnimation} />
+              </div>
+              <div className="relative z-10 flex flex-col items-center">
                 <CountdownTimer targetDate="2025-09-15T00:00:00" />
                 <div className="mt-4 bg-black/30 backdrop-blur-sm rounded-full px-4 py-2 flex items-center whitespace-nowrap">
                     <span className="relative flex h-3 w-3 mr-3">
@@ -94,6 +100,7 @@ const HeroSection = () => {
                     </span>
                     <p className="text-sm sm:text-base text-white/80 font-semibold">Launching 15 September 2025</p>
                 </div>
+              </div>
             </div>
           </div>
         </div>
@@ -119,3 +126,4 @@ const Footer = () => (
       </div>
     </footer>
   );
+

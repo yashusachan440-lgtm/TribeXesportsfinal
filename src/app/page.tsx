@@ -32,24 +32,11 @@ export default function Home() {
 }
 
 const HeroSection = () => {
-    const [videoPlaying, setVideoPlaying] = useState(false);
-    const videoSrc = `https://www.youtube.com/embed/JDY8XkebaeA?${videoPlaying ? 'autoplay=1&' : ''}loop=1&playlist=JDY8XkebaeA&controls=0&showinfo=0&autohide=1&mute=${videoPlaying ? '0' : '1'}&playsinline=1`;
+    const videoSrc = `https://www.youtube.com/embed/JDY8XkebaeA?autoplay=1&loop=1&playlist=JDY8XkebaeA&controls=0&showinfo=0&autohide=1&mute=0&playsinline=1`;
   
     return (
       <section id="home" className="relative h-screen flex flex-col justify-between text-white overflow-hidden">
         <div className="absolute top-0 left-0 w-full h-full z-0 overflow-hidden">
-        {!videoPlaying && (
-            <div className="absolute inset-0 z-20 flex items-center justify-center bg-black/50">
-              <Button
-                variant="ghost"
-                size="icon"
-                className="w-24 h-24 text-white hover:bg-white/20 rounded-full"
-                onClick={() => setVideoPlaying(true)}
-              >
-                <Play className="w-16 h-16 fill-white" />
-              </Button>
-            </div>
-          )}
           <iframe
             className="absolute top-1/2 left-1/2 w-full h-full object-cover transform -translate-x-1/2 -translate-y-1/2"
             style={{ minWidth: '177.77vh', minHeight: '100vw' }}

@@ -16,7 +16,7 @@ import confettiAnimation from '../../public/animations/confetti.json';
 
 export default function Home() {
   return (
-    <div className="flex flex-col min-h-screen bg-background overflow-hidden">
+    <div className="flex flex-col h-screen bg-background overflow-hidden">
       <main className="flex-1">
         <HeroSection />
       </main>
@@ -28,11 +28,17 @@ const HeroSection = () => {
     const videoSrc = `https://www.youtube.com/embed/JDY8XkebaeA?autoplay=1&loop=1&playlist=JDY8XkebaeA&controls=0&showinfo=0&autohide=1&playsinline=1&mute=0`;
   
     return (
-        <section id="home" className="relative h-screen w-screen flex flex-col text-white overflow-hidden">
-            <div className="absolute top-0 left-0 w-full h-full z-0 overflow-hidden">
+        <section id="home" className="relative h-full w-full flex flex-col text-white">
+            <div className="fixed top-0 left-0 w-full h-full -z-10 overflow-hidden bg-black">
                 <iframe
                     className="absolute top-1/2 left-1/2 min-w-full min-h-full w-auto h-auto object-cover"
-                    style={{ transform: 'translate(-50%, -50%) scale(1.5)' }}
+                    style={{ 
+                      transform: 'translate(-50%, -50%)',
+                      width: '177.77777778vh', /* 16/9 aspect ratio */
+                      minWidth: '100vw',
+                      height: '56.25vw', /* 16/9 aspect ratio */
+                      minHeight: '100vh',
+                    }}
                     src={videoSrc}
                     title="YouTube video player"
                     frameBorder="0"
@@ -42,12 +48,6 @@ const HeroSection = () => {
                 <div className="absolute top-0 left-0 w-full h-full bg-black/60"></div>
             </div>
 
-            <header className="absolute top-0 left-0 right-0 z-20 p-4">
-              <div className="container mx-auto flex items-center justify-between">
-                
-              </div>
-            </header>
-    
             <div className="container mx-auto relative z-10 px-4 flex-1 flex flex-col justify-center items-center py-8">
               <div className="flex flex-col xl:flex-row items-center justify-center xl:justify-between gap-8 w-full">
                 <div className="w-full max-w-4xl text-center xl:text-left flex flex-col items-center xl:items-start">
@@ -103,7 +103,7 @@ const HeroSection = () => {
 };
 
 const Footer = () => (
-    <footer id="contact" className="bg-transparent py-4 relative z-10 w-full">
+    <footer id="contact" className="bg-transparent py-4 relative z-10 w-full mt-auto">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col md:flex-row items-center justify-between gap-4">
           <div className="text-center md:text-left text-foreground/50 text-xs sm:text-sm">
@@ -119,4 +119,3 @@ const Footer = () => (
       </div>
     </footer>
   );
-

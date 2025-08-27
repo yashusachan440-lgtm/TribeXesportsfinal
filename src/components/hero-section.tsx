@@ -71,6 +71,7 @@ const HeroSection = () => {
             <div className="absolute inset-0 -z-10 flex items-center justify-center">
               <LottiePlayer
                 loop
+                autoplay
                 animationData="https://lottie.host/c1b2dc54-bd3d-4d31-860f-8d75508ce8e6/OKBgN4LfK5.lottie"
                 style={{ width: 400, height: 400 }}
               />

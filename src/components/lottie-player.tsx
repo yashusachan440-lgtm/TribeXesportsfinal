@@ -12,5 +12,11 @@ export default function LottiePlayer(
   const { animationData, ...rest } = props;
   const isUrl = typeof animationData === 'string';
 
-  return <Lottie {...rest} animationData={isUrl ? undefined : animationData} src={isUrl ? animationData : undefined} />;
+  return (
+    <Lottie
+      {...rest}
+      animationData={isUrl ? undefined : animationData}
+      src={isUrl ? animationData : undefined}
+    />
+  );
 }

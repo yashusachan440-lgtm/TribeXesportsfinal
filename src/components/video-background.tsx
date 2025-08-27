@@ -1,8 +1,7 @@
 
 'use client';
 
-import { useIsMobile } from '@/hooks/use-mobile';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import { UnmuteButton } from './unmute-button';
 
 interface VideoBackgroundProps {
@@ -10,13 +9,7 @@ interface VideoBackgroundProps {
 }
 
 const VideoBackground = ({ videoId }: VideoBackgroundProps) => {
-  const isMobile = useIsMobile();
   const [isMuted, setIsMuted] = useState(true);
-
-  useEffect(() => {
-    // On desktop, we attempt to play with sound. On mobile, we start muted.
-    setIsMuted(isMobile);
-  }, [isMobile]);
 
   const toggleMute = () => {
     setIsMuted(!isMuted);
@@ -39,7 +32,7 @@ const VideoBackground = ({ videoId }: VideoBackgroundProps) => {
         ></iframe>
         <div className="absolute top-0 left-0 w-full h-full bg-black/60"></div>
       </div>
-      {isMobile && <UnmuteButton isMuted={isMuted} onClick={toggleMute} />}
+      <UnmuteButton isMuted={isMuted} onClick={toggleMute} />
     </>
   );
 };

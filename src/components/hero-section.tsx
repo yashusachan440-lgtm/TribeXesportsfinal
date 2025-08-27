@@ -8,6 +8,7 @@ import { WhatsAppIcon } from '@/components/icons/whatsapp-icon';
 import { FreeFireLogo } from '@/components/icons/free-fire-logo';
 import LottiePlayer from '@/components/lottie-player';
 import { Mail, Phone } from 'lucide-react';
+import { UnmuteButton } from './unmute-button';
 
 const HeroSection = () => {
   return (

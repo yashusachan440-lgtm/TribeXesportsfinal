@@ -72,7 +72,7 @@ const HeroSection = () => {
               <LottiePlayer
                 loop
                 animationData="https://lottie.host/c1b2dc54-bd3d-4d31-860f-8d75508ce8e6/OKBgN4LfK5.lottie"
-                play
+                play={true}
                 style={{ width: 400, height: 400 }}
               />
             </div>

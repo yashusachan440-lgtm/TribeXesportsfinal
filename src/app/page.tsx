@@ -29,11 +29,11 @@ const HeroSection = () => {
     const videoSrc = `https://www.youtube.com/embed/JDY8XkebaeA?autoplay=1&mute=0&loop=1&playlist=JDY8XkebaeA&controls=0&showinfo=0&autohide=1&playsinline=1`;
   
     return (
-      <section id="home" className="relative min-h-screen flex flex-col justify-center text-white overflow-hidden py-16">
+      <section id="home" className="relative min-h-screen flex flex-col justify-center text-white overflow-hidden">
         <div className="absolute top-0 left-0 w-full h-full z-0 overflow-hidden">
           <iframe
-            className="absolute top-1/2 left-1/2 w-full h-full object-cover transform -translate-x-1/2 -translate-y-1/2"
-            style={{ width: '100%', height: '100%' }}
+            className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+            style={{ width: '177.77vh', minWidth: '100vw', height: '56.25vw', minHeight: '100vh' }}
             src={videoSrc}
             title="YouTube video player"
             frameBorder="0"
@@ -49,7 +49,7 @@ const HeroSection = () => {
           </div>
         </header>
   
-        <div className="container mx-auto relative z-10 px-4 flex-1 flex flex-col justify-center">
+        <div className="container mx-auto relative z-10 px-4 flex-1 flex flex-col justify-center py-16">
           <div className="flex flex-col xl:flex-row items-center justify-center xl:justify-between gap-8 w-full">
             <div className="w-full max-w-4xl text-center xl:text-left flex flex-col items-center xl:items-start">
               <h1 className="text-5xl sm:text-7xl md:text-8xl font-extrabold mb-4 lg:mb-8 font-poppins leading-tight whitespace-nowrap mt-6 sm:mt-10">
@@ -159,6 +159,7 @@ const Footer = () => (
     
 
     
+
 
 
 

@@ -14,7 +14,7 @@ const VideoBackground = ({ videoId }: VideoBackgroundProps) => {
         src={videoSrc}
         title="YouTube video player"
         frameBorder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allow="autoplay; encrypted-media; picture-in-picture"
         allowFullScreen
         className="absolute top-1/2 left-1/2 w-full h-full min-w-[177.77vh] min-h-[100vw] object-cover"
         style={{ transform: 'translate(-50%, -50%)' }}

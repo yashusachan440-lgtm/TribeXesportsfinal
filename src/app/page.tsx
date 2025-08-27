@@ -55,12 +55,12 @@ const HeroSection = () => {
               <h1 className="text-5xl sm:text-7xl md:text-8xl font-extrabold mb-4 lg:mb-8 font-poppins leading-tight whitespace-nowrap mt-6 sm:mt-10">
                 <span className="text-primary">TRIBEX</span> <span className="text-white font-open-sans">Esports</span>
               </h1>
-              <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start w-full space-y-2 sm:space-y-0 sm:space-x-2 text-center mb-6">
-                <h2 className="text-xl sm:text-2xl md:text-5xl font-semibold text-white/90 font-montserrat uppercase">
+              <div className="flex flex-wrap items-center justify-center lg:justify-start gap-x-4 gap-y-2 text-center mb-6">
+                <h2 className="text-2xl md:text-4xl font-semibold text-white/90 font-montserrat uppercase tracking-wider">
                   Revolutionizing
                 </h2>
-                <FreeFireLogo className="h-12 sm:h-14 md:h-20" />
-                <h2 className="text-xl sm:text-2xl md:text-5xl font-semibold text-white/90 font-montserrat uppercase">
+                <FreeFireLogo className="h-10 md:h-14" />
+                <h2 className="text-2xl md:text-4xl font-semibold text-white/90 font-montserrat uppercase tracking-wider">
                   Community
                 </h2>
               </div>
@@ -122,6 +122,7 @@ const Footer = () => (
   );
 
     
+
 
 
 

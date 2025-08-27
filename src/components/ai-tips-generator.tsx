@@ -25,6 +25,8 @@ const tournaments = [
   'Tribex Grand Opening',
   'Pro Series Qualifiers',
   'Community Cup',
+  'Ranked Warriors Challenge',
+  'Clash Squad Masters',
 ];
 
 export default function AITipsGenerator() {
@@ -54,19 +56,17 @@ export default function AITipsGenerator() {
   };
 
   return (
-    <Card className="bg-transparent border-primary/20 h-full">
-      <CardHeader>
-        <div className="flex items-center gap-3">
+    <Card className="bg-card border-primary/20 shadow-lg">
+      <CardHeader className="text-center">
+        <div className="flex items-center justify-center gap-3 mb-2">
             <Wand2 className="text-primary h-8 w-8" />
-            <div>
-                <CardTitle className="text-2xl font-bold text-primary font-headline">AI Coach</CardTitle>
-                <CardDescription>Get AI-powered tips for any tournament.</CardDescription>
-            </div>
+            <CardTitle className="text-3xl font-bold text-primary font-headline">AI Coach</CardTitle>
         </div>
+        <CardDescription>Get instant, AI-powered strategies to dominate any tournament.</CardDescription>
       </CardHeader>
       <CardContent>
         <Form {...form}>
-          <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
+          <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6 max-w-lg mx-auto">
             <FormField
               control={form.control}
               name="tournamentName"
@@ -91,28 +91,32 @@ export default function AITipsGenerator() {
                 </FormItem>
               )}
             />
-            <Button type="submit" disabled={isLoading} className="w-full bg-primary hover:bg-primary/90">
+            <Button type="submit" disabled={isLoading} size="lg" className="w-full bg-primary hover:bg-primary/90 font-bold">
               {isLoading ? 'Generating...' : 'Get Pro Tips'}
             </Button>
           </form>
         </Form>
+        <div className="mt-8 max-w-3xl mx-auto">
         {isLoading && (
           <div className="mt-6 space-y-4">
             <Skeleton className="h-4 w-full" />
             <Skeleton className="h-4 w-full" />
             <Skeleton className="h-4 w-3/4" />
+             <Skeleton className="h-4 w-full" />
+            <Skeleton className="h-4 w-1/2" />
           </div>
         )}
         {generatedTips && (
-          <Card className="mt-6 bg-background/50 border-primary/50 max-h-48 overflow-y-auto">
+          <Card className="mt-6 bg-background/50 border-primary/50 max-h-60 overflow-y-auto">
             <CardHeader>
-                <CardTitle className="font-headline">Your Custom Strategy</CardTitle>
+                <CardTitle className="font-headline text-primary">Your Custom Strategy</CardTitle>
             </CardHeader>
             <CardContent>
                 <p className="whitespace-pre-wrap text-sm text-foreground/80">{generatedTips}</p>
             </CardContent>
           </Card>
         )}
+        </div>
       </CardContent>
     </Card>
   );

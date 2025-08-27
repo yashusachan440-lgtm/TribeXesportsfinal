@@ -18,7 +18,7 @@ export default {
     },
     extend: {
       fontFamily: {
-        body: ['Space Grotesk', 'sans-serif'],
+        body: ['"Open Sans"', 'sans-serif'],
         headline: ['Signika', 'sans-serif'],
         display: ['Cinzel', 'serif'],
         poppins: ['Poppins', 'sans-serif'],
@@ -136,5 +136,3 @@ export default {
   },
   plugins: [require('tailwindcss-animate')],
 } satisfies Config;
-
-    

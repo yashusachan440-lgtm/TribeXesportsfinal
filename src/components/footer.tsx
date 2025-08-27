@@ -4,7 +4,7 @@ import { DiscordIcon } from '@/components/icons/discord-icon';
 import { WhatsAppIcon } from '@/components/icons/whatsapp-icon';
 
 const Footer = () => (
-  <footer id="contact" className="bg-background border-t border-border/50 py-4 w-full">
+  <footer id="contact" className="border-t border-border/50 py-4 w-full">
     <div className="container mx-auto px-4 sm:px-6 lg:px-8">
       <div className="flex flex-col md:flex-row items-center justify-between gap-4">
         <div className="text-center md:text-left text-foreground/50 text-xs sm:text-sm">

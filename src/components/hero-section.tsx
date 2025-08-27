@@ -5,9 +5,7 @@ import { Button } from '@/components/ui/button';
 import CountdownTimer from '@/components/countdown-timer';
 import { DiscordIcon } from '@/components/icons/discord-icon';
 import { WhatsAppIcon } from '@/components/icons/whatsapp-icon';
-import LottiePlayer from '@/components/lottie-player';
 import { FreeFireLogo } from '@/components/icons/free-fire-logo';
-import confettiAnimation from '../../public/animations/confetti.json';
 
 const HeroSection = () => {
   return (
@@ -15,8 +13,6 @@ const HeroSection = () => {
       id="home"
       className="relative h-screen w-full flex flex-col items-center justify-center text-white overflow-hidden"
     >
-      
-
       <div className="container mx-auto relative z-10 px-4 flex-1 flex flex-col justify-center items-center py-8">
         <div className="flex flex-col xl:flex-row items-center justify-center xl:justify-between gap-8 w-full">
           <div className="w-full max-w-4xl text-center xl:text-left flex flex-col items-center xl:items-start">
@@ -73,13 +69,6 @@ const HeroSection = () => {
             </div>
           </div>
           <div className="w-full xl:w-auto mt-8 xl:mt-0 relative flex flex-col items-center justify-center">
-            <div className="absolute inset-0 -z-10 flex items-center justify-center">
-              <LottiePlayer
-                animationData={confettiAnimation}
-                loop={true}
-                className="w-full h-full"
-              />
-            </div>
             <div className="relative z-10 flex flex-col items-center">
               <CountdownTimer targetDate="2025-09-15T00:00:00" />
               <div className="mt-4 bg-black/30 backdrop-blur-sm rounded-full px-4 py-2 flex items-center whitespace-nowrap justify-center">

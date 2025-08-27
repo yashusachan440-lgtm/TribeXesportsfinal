@@ -4,7 +4,7 @@ import Footer from '@/components/footer';
 import HeroSection from '@/components/hero-section';
 
 export default function Home() {
-  const videoSrc = `https://www.youtube.com/embed/mDYqT0_9VR4?autoplay=1&loop=1&playlist=mDYqT0_9VR4&controls=0&showinfo=0&autohide=1&playsinline=1&mute=0`;
+  const videoSrc = `https://www.youtube.com/embed/JDY8XkebaeA?autoplay=1&loop=1&playlist=JDY8XkebaeA&controls=0&showinfo=0&autohide=1&playsinline=1&mute=0`;
 
   return (
     <div className="relative flex flex-col min-h-screen bg-transparent overflow-x-hidden">

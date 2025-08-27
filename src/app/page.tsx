@@ -16,7 +16,7 @@ import confettiAnimation from '../../public/animations/confetti.json';
 
 export default function Home() {
   return (
-    <div className="flex flex-col h-screen bg-background overflow-hidden">
+    <div className="flex flex-col min-h-screen bg-background overflow-hidden">
       <main className="flex-1 flex">
         <HeroSection />
       </main>
@@ -28,10 +28,10 @@ const HeroSection = () => {
     const videoSrc = `https://www.youtube.com/embed/JDY8XkebaeA?autoplay=1&loop=1&playlist=JDY8XkebaeA&controls=0&showinfo=0&autohide=1&playsinline=1&mute=0`;
   
     return (
-        <section id="home" className="relative h-full w-full flex flex-col justify-between text-white overflow-hidden">
-            <div className="absolute top-0 left-0 w-full h-full z-0 overflow-hidden">
+        <section id="home" className="relative h-screen w-screen flex flex-col text-white overflow-hidden">
+            <div className="absolute top-0 left-0 w-full h-full z-0">
                 <iframe
-                    className="absolute top-1/2 left-1/2 w-[177.77vh] min-w-[100vw] h-[56.25vw] min-h-[100vh] object-cover"
+                    className="absolute top-1/2 left-1/2 min-w-full min-h-full w-auto h-auto object-cover"
                     style={{
                         transform: 'translate(-50%, -50%)',
                     }}
@@ -105,7 +105,7 @@ const HeroSection = () => {
 };
 
 const Footer = () => (
-    <footer id="contact" className="bg-transparent py-4 relative z-10">
+    <footer id="contact" className="bg-transparent py-4 relative z-10 w-full">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col md:flex-row items-center justify-between gap-4">
           <div className="text-center md:text-left text-foreground/50 text-xs sm:text-sm">
@@ -121,4 +121,3 @@ const Footer = () => (
       </div>
     </footer>
   );
-

@@ -26,7 +26,7 @@ export default function Home() {
 }
 
 const HeroSection = () => {
-    const videoSrc = `https://www.youtube.com/embed/JDY8XkebaeA?autoplay=1&mute=1&loop=1&playlist=JDY8XkebaeA&controls=0&showinfo=0&autohide=1&playsinline=1`;
+    const videoSrc = `https://www.youtube.com/embed/JDY8XkebaeA?autoplay=1&mute=0&loop=1&playlist=JDY8XkebaeA&controls=0&showinfo=0&autohide=1&playsinline=1`;
   
     return (
       <section id="home" className="relative h-screen flex flex-col justify-between text-white overflow-hidden">
@@ -56,11 +56,11 @@ const HeroSection = () => {
                 <span className="text-primary">TRIBEX</span> <span className="text-white font-open-sans">Esports</span>
               </h1>
               <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start w-full space-y-2 sm:space-y-0 sm:space-x-2 text-center mb-6">
-                <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold text-white/90 font-montserrat uppercase">
+                <h2 className="text-xl sm:text-2xl md:text-5xl font-semibold text-white/90 font-montserrat uppercase">
                   Revolutionizing
                 </h2>
-                <FreeFireLogo className="h-12 sm:h-14 md:h-16" />
-                <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold text-white/90 font-montserrat uppercase">
+                <FreeFireLogo className="h-12 sm:h-14 md:h-20" />
+                <h2 className="text-xl sm:text-2xl md:text-5xl font-semibold text-white/90 font-montserrat uppercase">
                   Community
                 </h2>
               </div>
@@ -122,6 +122,7 @@ const Footer = () => (
   );
 
     
+
 
 
 

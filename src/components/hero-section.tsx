@@ -10,28 +10,12 @@ import { FreeFireLogo } from '@/components/icons/free-fire-logo';
 import confettiAnimation from '../../public/animations/confetti.json';
 
 const HeroSection = () => {
-  const videoSrc = `https://www.youtube.com/embed/mDYqT0_9VR4?autoplay=1&loop=1&playlist=mDYqT0_9VR4&controls=0&showinfo=0&autohide=1&playsinline=1&mute=0`;
-
   return (
     <section
       id="home"
       className="relative h-screen w-full flex flex-col items-center justify-center text-white overflow-hidden"
     >
-      <div className="absolute top-0 left-0 w-full h-full -z-10 overflow-hidden">
-        <iframe
-          className="absolute top-1/2 left-1/2 min-w-full min-h-full w-auto h-auto"
-          style={{
-            transform: 'translate(-50%, -50%) scale(1.5)',
-            pointerEvents: 'none',
-          }}
-          src={videoSrc}
-          title="YouTube video player"
-          frameBorder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowFullScreen
-        ></iframe>
-        <div className="absolute top-0 left-0 w-full h-full bg-black/60"></div>
-      </div>
+      <div className="absolute top-0 left-0 w-full h-full bg-black/60 -z-10"></div>
 
       <div className="container mx-auto relative z-10 px-4 flex-1 flex flex-col justify-center items-center py-8">
         <div className="flex flex-col xl:flex-row items-center justify-center xl:justify-between gap-8 w-full">

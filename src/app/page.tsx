@@ -29,7 +29,7 @@ const HeroSection = () => {
     const videoSrc = `https://www.youtube.com/embed/JDY8XkebaeA?autoplay=1&mute=0&loop=1&playlist=JDY8XkebaeA&controls=0&showinfo=0&autohide=1&playsinline=1`;
   
     return (
-      <section id="home" className="relative h-screen flex flex-col justify-between text-white overflow-hidden">
+      <section id="home" className="relative min-h-screen flex flex-col justify-center text-white overflow-hidden py-16">
         <div className="absolute top-0 left-0 w-full h-full z-0 overflow-hidden">
           <iframe
             className="absolute top-1/2 left-1/2 w-full h-full object-cover transform -translate-x-1/2 -translate-y-1/2"
@@ -159,6 +159,7 @@ const Footer = () => (
     
 
     
+
 
 
 

@@ -116,5 +116,3 @@ const Footer = () => (
       </div>
     </footer>
   );
-
-    

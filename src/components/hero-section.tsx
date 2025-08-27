@@ -21,7 +21,7 @@ const HeroSection = () => {
               <span className="text-primary">TRIBEX</span>{' '}
               <span className="text-white font-open-sans">Esports</span>
             </h1>
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-x-2 md:gap-x-4 mb-6 text-xl sm:text-2xl">
+            <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-x-2 md:gap-x-4 mb-6 text-xl sm:text-2xl">
               <div className="text-white/90 font-montserrat uppercase tracking-wider font-semibold">
                 <span>Revolutionizing</span>
               </div>

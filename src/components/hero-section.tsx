@@ -7,7 +7,6 @@ import { DiscordIcon } from '@/components/icons/discord-icon';
 import { WhatsAppIcon } from '@/components/icons/whatsapp-icon';
 import { FreeFireLogo } from '@/components/icons/free-fire-logo';
 import LottiePlayer from '@/components/lottie-player';
-import Confetti from '@/components/confetti';
 
 const HeroSection = () => {
   return (

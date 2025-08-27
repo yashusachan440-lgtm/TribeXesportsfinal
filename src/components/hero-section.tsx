@@ -15,7 +15,7 @@ const HeroSection = () => {
       id="home"
       className="relative h-screen w-full flex flex-col items-center justify-center text-white overflow-hidden"
     >
-      <div className="absolute top-0 left-0 w-full h-full bg-black/60 -z-10"></div>
+      
 
       <div className="container mx-auto relative z-10 px-4 flex-1 flex flex-col justify-center items-center py-8">
         <div className="flex flex-col xl:flex-row items-center justify-center xl:justify-between gap-8 w-full">

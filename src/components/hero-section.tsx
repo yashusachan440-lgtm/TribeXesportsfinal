@@ -68,15 +68,13 @@ const HeroSection = () => {
             </div>
           </div>
           <div className="w-full xl:w-auto mt-8 xl:mt-0 relative flex flex-col items-center justify-center">
-            <div className="absolute inset-0 -z-10 flex items-center justify-center">
+            <div className="relative z-10 flex flex-col items-center">
               <LottiePlayer
                 loop
                 autoplay
                 src="https://lottie.host/c1b2dc54-bd3d-4d31-860f-8d75508ce8e6/OKBgN4LfK5.lottie"
                 style={{ width: 400, height: 400 }}
               />
-            </div>
-            <div className="relative z-10 flex flex-col items-center">
               <CountdownTimer targetDate="2025-09-15T00:00:00" />
               <div className="mt-4 bg-black/30 backdrop-blur-sm rounded-full px-4 py-2 flex items-center whitespace-nowrap justify-center">
                 <span className="relative flex h-3 w-3 mr-3">

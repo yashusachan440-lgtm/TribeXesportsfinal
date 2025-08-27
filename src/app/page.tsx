@@ -16,8 +16,8 @@ import confettiAnimation from '../../public/animations/confetti.json';
 
 export default function Home() {
   return (
-    <div className="flex flex-col h-screen bg-black overflow-hidden">
-      <main className="flex-1">
+    <div className="flex flex-col min-h-screen bg-black overflow-hidden">
+      <main className="flex-1 flex flex-col">
         <HeroSection />
       </main>
     </div>
@@ -25,10 +25,10 @@ export default function Home() {
 }
 
 const HeroSection = () => {
-    const videoSrc = `https://www.youtube.com/embed/JDY8XkebaeA?autoplay=1&loop=1&playlist=JDY8XkebaeA&controls=0&showinfo=0&autohide=1&playsinline=1&mute=0`;
+    const videoSrc = `https://www.youtube.com/embed/mDYqT0_9VR4?autoplay=1&loop=1&playlist=mDYqT0_9VR4&controls=0&showinfo=0&autohide=1&playsinline=1&mute=0`;
   
     return (
-        <section id="home" className="relative h-full w-full flex flex-col items-center justify-center text-white">
+        <section id="home" className="relative h-screen w-full flex flex-col items-center justify-center text-white overflow-hidden">
             <div className="fixed top-0 left-0 w-full h-full -z-10 overflow-hidden">
                 <iframe
                     className="absolute top-1/2 left-1/2 min-w-full min-h-full w-auto h-auto"
@@ -116,3 +116,5 @@ const Footer = () => (
       </div>
     </footer>
   );
+
+    

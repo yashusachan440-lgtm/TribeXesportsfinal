@@ -31,9 +31,13 @@ const HeroSection = () => {
         <section id="home" className="relative h-screen w-full flex flex-col justify-between text-white overflow-hidden">
             <div className="absolute top-0 left-0 w-full h-full z-0 overflow-hidden">
                 <iframe
-                    className="absolute top-1/2 left-1/2 min-w-full min-h-full w-auto h-auto"
+                    className="absolute top-1/2 left-1/2 w-full h-full object-cover"
                     style={{
-                        transform: 'translate(-50%, -50%) scale(1.5)',
+                        transform: 'translate(-50%, -50%)',
+                        minWidth: '100%',
+                        minHeight: '100%',
+                        width: 'auto',
+                        height: 'auto',
                     }}
                     src={videoSrc}
                     title="YouTube video player"

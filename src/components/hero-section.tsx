@@ -69,15 +69,7 @@ const HeroSection = () => {
           </div>
           <div className="w-full xl:w-auto mt-8 xl:mt-0 flex items-center justify-center">
             <div className="relative flex items-center justify-center w-[400px] h-[400px]">
-              <div className="absolute inset-0 flex items-center justify-center">
-                <LottiePlayer
-                  loop
-                  autoplay
-                  src="https://lottie.host/7ab080fc-298b-41c7-94fb-4c37ed1d71ad/tUXflEu9Md.lottie"
-                  style={{ width: 300, height: 300 }}
-                />
-              </div>
-              <div className="absolute inset-0 flex items-center justify-center">
+              <div className="absolute inset-0 z-0 flex items-center justify-center">
                 <LottiePlayer
                   loop
                   autoplay
@@ -85,7 +77,7 @@ const HeroSection = () => {
                   style={{ width: 400, height: 400 }}
                 />
               </div>
-              <div className="absolute inset-0 flex flex-col items-center justify-center">
+              <div className="relative z-10 flex flex-col items-center justify-center">
                 <CountdownTimer targetDate="2025-09-15T00:00:00" />
                 <div className="mt-4 bg-black/30 backdrop-blur-sm rounded-full px-4 py-2 flex items-center whitespace-nowrap justify-center">
                   <span className="relative flex h-3 w-3 mr-3">
@@ -96,6 +88,14 @@ const HeroSection = () => {
                     Launching 15 September 2025
                   </p>
                 </div>
+              </div>
+              <div className="absolute inset-0 z-20 flex items-center justify-center pointer-events-none">
+                <LottiePlayer
+                  loop
+                  autoplay
+                  src="https://lottie.host/7ab080fc-298b-41c7-94fb-4c37ed1d71ad/tUXflEu9Md.lottie"
+                  style={{ width: 300, height: 300 }}
+                />
               </div>
             </div>
           </div>

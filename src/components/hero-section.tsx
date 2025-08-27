@@ -67,7 +67,13 @@ const HeroSection = () => {
               </a>
             </div>
           </div>
-          <div className="w-full xl:w-auto mt-8 xl:mt-0 flex flex-col items-center justify-center">
+          <div className="w-full xl:w-auto mt-8 xl:mt-0 flex flex-col md:flex-row items-center justify-center">
+            <LottiePlayer
+              loop
+              autoplay
+              src="https://lottie.host/7ab080fc-298b-41c7-94fb-4c37ed1d71ad/tUXflEu9Md.lottie"
+              style={{ width: 300, height: 300 }}
+            />
             <div className="relative flex items-center justify-center">
               <LottiePlayer
                 loop

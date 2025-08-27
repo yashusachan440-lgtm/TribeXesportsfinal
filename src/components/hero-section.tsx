@@ -21,11 +21,11 @@ const HeroSection = () => {
               <span className="text-primary">TRIBEX</span>{' '}
               <span className="text-white font-open-sans">Esports</span>
             </h1>
-            <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-x-2 md:gap-x-4 mb-6 text-xl sm:text-2xl">
+            <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-x-2 md:gap-x-4 mb-6 text-lg sm:text-xl md:text-2xl">
               <div className="text-white/90 font-montserrat uppercase tracking-wider font-semibold">
                 <span>Revolutionizing</span>
               </div>
-              <FreeFireLogo className="h-12 sm:h-14 md:h-16" />
+              <FreeFireLogo className="h-10 sm:h-12 md:h-14" />
               <div className="text-white/90 font-montserrat uppercase tracking-wider font-semibold">
                 <span>Community</span>
               </div>

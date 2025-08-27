@@ -16,7 +16,7 @@ import confettiAnimation from '../../public/animations/confetti.json';
 
 export default function Home() {
   return (
-    <div className="flex flex-col min-h-[100dvh] bg-background">
+    <div className="flex flex-col h-screen bg-background overflow-hidden">
       
       <main className="flex-1">
         <HeroSection />
@@ -29,7 +29,7 @@ const HeroSection = () => {
     const videoSrc = `https://www.youtube.com/embed/JDY8XkebaeA?autoplay=1&mute=0&loop=1&playlist=JDY8XkebaeA&controls=0&showinfo=0&autohide=1&playsinline=1`;
   
     return (
-        <section id="home" className="relative min-h-screen h-full w-full flex flex-col justify-center text-white overflow-hidden">
+        <section id="home" className="relative h-full w-full flex flex-col justify-center text-white overflow-hidden">
         <div className="absolute top-0 left-0 w-full h-full z-0 overflow-hidden">
           <iframe
             className="absolute"
@@ -41,7 +41,6 @@ const HeroSection = () => {
               minHeight: '100vh',
               minWidth: '177.77vh', /* 100/56.25 = 1.77 -> 177.77 */
               transform: 'translate(-50%, -50%)',
-              objectFit: 'cover',
             }}
             src={videoSrc}
             title="YouTube video player"
@@ -64,11 +63,11 @@ const HeroSection = () => {
               <h1 className="text-5xl sm:text-7xl md:text-8xl font-extrabold mb-4 lg:mb-8 font-poppins leading-tight whitespace-nowrap mt-6 sm:mt-10">
                 <span className="text-primary">TRIBEX</span> <span className="text-white font-open-sans">Esports</span>
               </h1>
-              <div className="flex flex-col md:flex-row items-center justify-center md:justify-start gap-x-3 sm:gap-x-4 mb-6">
+              <div className="flex flex-col md:flex-row items-center justify-center md:gap-x-4 mb-6">
                 <div className="text-white/90 font-montserrat uppercase tracking-wider font-semibold text-lg sm:text-xl md:text-2xl">
                   <span>Revolutionizing</span>
                 </div>
-                <FreeFireLogo className="h-10 sm:h-12 md:h-16" />
+                <FreeFireLogo className="h-12 sm:h-14 md:h-16" />
                 <div className="text-white/90 font-montserrat uppercase tracking-wider font-semibold text-lg sm:text-xl md:text-2xl">
                   <span>Community</span>
                 </div>
@@ -168,6 +167,7 @@ const Footer = () => (
     
 
     
+
 
 
 

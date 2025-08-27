@@ -6,6 +6,7 @@ import CountdownTimer from '@/components/countdown-timer';
 import { DiscordIcon } from '@/components/icons/discord-icon';
 import { WhatsAppIcon } from '@/components/icons/whatsapp-icon';
 import { FreeFireLogo } from '@/components/icons/free-fire-logo';
+import Confetti from '@/components/confetti';
 
 const HeroSection = () => {
   return (
@@ -13,6 +14,7 @@ const HeroSection = () => {
       id="home"
       className="relative h-screen w-full flex flex-col items-center justify-center text-white overflow-hidden"
     >
+      <Confetti />
       <div className="container mx-auto relative z-10 px-4 flex-1 flex flex-col justify-center items-center py-8">
         <div className="flex flex-col xl:flex-row items-center justify-center xl:justify-between gap-8 w-full">
           <div className="w-full max-w-4xl text-center xl:text-left flex flex-col items-center xl:items-start">
@@ -46,7 +48,7 @@ const HeroSection = () => {
               >
                 <Button
                   size="lg"
-                  className="bg-[#5865F2] hover:bg-[#4f5bda] text-white font-bold transition flex items-center gap-2 justify-center w-48"
+                  className="bg-[#5865F2] hover:bg-[#4f5bda] text-white font-bold transition flex items-center justify-center w-48"
                 >
                   <DiscordIcon className="h-6 w-6" />
                   Join Discord
@@ -59,7 +61,7 @@ const HeroSection = () => {
               >
                 <Button
                   size="lg"
-                  className="bg-[#25D366] hover:bg-[#1EBE57] text-white font-bold transition flex items-center gap-2 justify-center w-48"
+                  className="bg-[#25D366] hover:bg-[#1EBE57] text-white font-bold transition flex items-center justify-center w-48"
                 >
                   <WhatsAppIcon className="h-6 w-6" /> Join Whatsapp
                 </Button>

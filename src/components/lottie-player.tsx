@@ -1,22 +1,25 @@
 
 'use client';
 
-import Lottie from 'lottie-react';
-import type { LottieComponentProps } from 'lottie-react';
+import { DotLottiePlayer, PlayerEvents } from '@dotlottie/react-player';
+import type { DotLottiePlayerProps } from '@dotlottie/react-player';
+import '@dotlottie/react-player/dist/index.css';
+import { useEffect, useState } from 'react';
 
 export default function LottiePlayer(
-  props: Omit<LottieComponentProps, 'animationData'> & {
-    animationData: any;
-  }
+  props: Omit<DotLottiePlayerProps, 'children'>
 ) {
-  const { animationData, ...rest } = props;
-  const isUrl = typeof animationData === 'string';
+  const [isClient, setIsClient] = useState(false);
+
+  useEffect(() => {
+    setIsClient(true);
+  }, []);
+
+  if (!isClient) {
+    return null;
+  }
 
   return (
-    <Lottie
-      {...rest}
-      animationData={isUrl ? undefined : animationData}
-      src={isUrl ? animationData : undefined}
-    />
+    <DotLottiePlayer {...props} />
   );
 }

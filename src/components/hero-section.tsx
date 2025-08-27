@@ -32,7 +32,7 @@ const HeroSection = () => {
                 <FreeFireLogo className="h-10 sm:h-12 md:h-14 my-1" />
                 <span className="text-white/90 font-montserrat uppercase tracking-widest font-semibold">Community</span>
               </div>
-              <div className="hidden lg:flex items-center gap-x-2 text-white/90 font-montserrat uppercase font-semibold tracking-wider" style={{ fontSize: '1rem', letterSpacing: '0.1em' }}>
+              <div className="hidden lg:flex items-center gap-x-2 text-white/90 font-montserrat uppercase font-semibold tracking-wider" style={{ fontSize: '1.2rem', letterSpacing: '0.17em' }}>
                 <span>Revolutionizing</span>
                 <FreeFireLogo className="h-8" />
                 <span>Community</span>

@@ -55,14 +55,12 @@ const HeroSection = () => {
               <h1 className="text-5xl sm:text-7xl md:text-8xl font-extrabold mb-4 lg:mb-8 font-poppins leading-tight whitespace-nowrap mt-6 sm:mt-10">
                 <span className="text-primary">TRIBEX</span> <span className="text-white font-open-sans">Esports</span>
               </h1>
-              <div className="flex flex-wrap items-center justify-center lg:justify-start gap-x-2 sm:gap-x-4 gap-y-2 text-center mb-6">
-                <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-white/90 font-montserrat uppercase tracking-wider">
-                  Revolutionizing
-                </h2>
-                <FreeFireLogo className="h-10 sm:h-12 md:h-16" />
-                <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-white/90 font-montserrat uppercase tracking-wider">
-                  Community
-                </h2>
+              <div className="flex items-center justify-center lg:justify-start gap-x-3 sm:gap-x-4 mb-6">
+                <div className="flex flex-col items-center justify-center text-white/90 font-montserrat uppercase tracking-wider font-semibold text-2xl sm:text-3xl md:text-4xl">
+                  <span>Revolutionizing</span>
+                  <span>Community</span>
+                </div>
+                <FreeFireLogo className="h-16 sm:h-20 md:h-24" />
               </div>
               <div className="text-sm sm:text-base md:text-lg mb-8 max-w-2xl text-white/80 mx-auto lg:mx-0">
                 <p>Something is about to shake the Indian esports scene… A movement is rising—one that doesn’t care about fame, money, or background. Only skill will decide who stands at the top. A place where players become family. Where tournaments are fair, opportunities are equal, and legends are made.</p>
@@ -155,5 +153,7 @@ const Footer = () => (
 
 
 
+
+    
 
     

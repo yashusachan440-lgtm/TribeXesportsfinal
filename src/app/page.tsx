@@ -16,7 +16,7 @@ import confettiAnimation from '../../public/animations/confetti.json';
 
 export default function Home() {
   return (
-    <div className="flex flex-col h-screen bg-background overflow-hidden">
+    <div className="flex flex-col h-screen bg-black overflow-hidden">
       <main className="flex-1">
         <HeroSection />
       </main>
@@ -28,16 +28,13 @@ const HeroSection = () => {
     const videoSrc = `https://www.youtube.com/embed/JDY8XkebaeA?autoplay=1&loop=1&playlist=JDY8XkebaeA&controls=0&showinfo=0&autohide=1&playsinline=1&mute=0`;
   
     return (
-        <section id="home" className="relative h-full w-full flex flex-col text-white">
-            <div className="fixed top-0 left-0 w-full h-full -z-10 overflow-hidden bg-black">
+        <section id="home" className="relative h-full w-full flex flex-col items-center justify-center text-white">
+            <div className="fixed top-0 left-0 w-full h-full -z-10 overflow-hidden">
                 <iframe
-                    className="absolute top-1/2 left-1/2 min-w-full min-h-full w-auto h-auto object-cover"
-                    style={{ 
-                      transform: 'translate(-50%, -50%)',
-                      width: '177.77777778vh', /* 16/9 aspect ratio */
-                      minWidth: '100vw',
-                      height: '56.25vw', /* 16/9 aspect ratio */
-                      minHeight: '100vh',
+                    className="absolute top-1/2 left-1/2 min-w-full min-h-full w-auto h-auto"
+                    style={{
+                        transform: 'translate(-50%, -50%) scale(1.5)',
+                        pointerEvents: 'none'
                     }}
                     src={videoSrc}
                     title="YouTube video player"

@@ -33,7 +33,7 @@ const HeroSection = () => {
         <div className="absolute top-0 left-0 w-full h-full z-0 overflow-hidden">
           <iframe
             className="absolute top-1/2 left-1/2 w-full h-full object-cover transform -translate-x-1/2 -translate-y-1/2"
-            style={{ minWidth: '177.77vh', minHeight: '100vw' }}
+            style={{ width: '100%', height: '100%' }}
             src={videoSrc}
             title="YouTube video player"
             frameBorder="0"
@@ -159,6 +159,7 @@ const Footer = () => (
     
 
     
+
 
 
 

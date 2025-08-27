@@ -67,23 +67,25 @@ const HeroSection = () => {
               </a>
             </div>
           </div>
-          <div className="w-full xl:w-auto mt-8 xl:mt-0 relative flex flex-col items-center justify-center">
-            <div className="relative z-10 flex flex-col items-center">
+          <div className="w-full xl:w-auto mt-8 xl:mt-0 flex flex-col items-center justify-center">
+            <div className="relative flex items-center justify-center">
               <LottiePlayer
                 loop
                 autoplay
                 src="https://lottie.host/c1b2dc54-bd3d-4d31-860f-8d75508ce8e6/OKBgN4LfK5.lottie"
                 style={{ width: 400, height: 400 }}
               />
-              <CountdownTimer targetDate="2025-09-15T00:00:00" />
-              <div className="mt-4 bg-black/30 backdrop-blur-sm rounded-full px-4 py-2 flex items-center whitespace-nowrap justify-center">
-                <span className="relative flex h-3 w-3 mr-3">
-                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>
-                  <span className="relative inline-flex rounded-full h-3 w-3 bg-red-500"></span>
-                </span>
-                <p className="text-xs sm:text-sm md:text-base text-white/80 font-semibold">
-                  Launching 15 September 2025
-                </p>
+              <div className="absolute inset-0 flex flex-col items-center justify-center">
+                <CountdownTimer targetDate="2025-09-15T00:00:00" />
+                <div className="mt-4 bg-black/30 backdrop-blur-sm rounded-full px-4 py-2 flex items-center whitespace-nowrap justify-center">
+                  <span className="relative flex h-3 w-3 mr-3">
+                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>
+                    <span className="relative inline-flex rounded-full h-3 w-3 bg-red-500"></span>
+                  </span>
+                  <p className="text-xs sm:text-sm md:text-base text-white/80 font-semibold">
+                    Launching 15 September 2025
+                  </p>
+                </div>
               </div>
             </div>
           </div>

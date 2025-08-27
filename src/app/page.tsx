@@ -29,11 +29,10 @@ const HeroSection = () => {
     const videoSrc = `https://www.youtube.com/embed/JDY8XkebaeA?autoplay=1&mute=0&loop=1&playlist=JDY8XkebaeA&controls=0&showinfo=0&autohide=1&playsinline=1`;
   
     return (
-      <section id="home" className="relative h-screen flex flex-col justify-center text-white overflow-hidden">
+        <section id="home" className="relative min-h-screen h-full w-full flex flex-col justify-center text-white overflow-hidden">
         <div className="absolute top-0 left-0 w-full h-full z-0 overflow-hidden">
           <iframe
-            className="absolute top-1/2 left-1/2 w-full h-full object-cover transform -translate-x-1/2 -translate-y-1/2"
-            style={{ minWidth: '177.77vh', minHeight: '100vw' }}
+            className="absolute top-1/2 left-1/2 min-w-full min-h-full w-auto h-auto object-cover transform -translate-x-1/2 -translate-y-1/2"
             src={videoSrc}
             title="YouTube video player"
             frameBorder="0"
@@ -49,18 +48,18 @@ const HeroSection = () => {
           </div>
         </header>
   
-        <div className="container mx-auto relative z-10 px-4 flex-1 flex flex-col justify-center py-16">
+        <div className="container mx-auto relative z-10 px-4 flex-1 flex flex-col justify-center items-center py-16">
           <div className="flex flex-col xl:flex-row items-center justify-center xl:justify-between gap-8 w-full">
             <div className="w-full max-w-4xl text-center xl:text-left flex flex-col items-center xl:items-start">
               <h1 className="text-5xl sm:text-7xl md:text-8xl font-extrabold mb-4 lg:mb-8 font-poppins leading-tight whitespace-nowrap mt-6 sm:mt-10">
                 <span className="text-primary">TRIBEX</span> <span className="text-white font-open-sans">Esports</span>
               </h1>
               <div className="flex flex-col md:flex-row items-center justify-center md:justify-start gap-x-3 sm:gap-x-4 mb-6">
-                <div className="text-white/90 font-montserrat uppercase tracking-wider font-semibold text-2xl sm:text-3xl md:text-2xl">
+                <div className="text-white/90 font-montserrat uppercase tracking-wider font-semibold text-lg sm:text-xl md:text-2xl">
                   <span>Revolutionizing</span>
                 </div>
-                <FreeFireLogo className="h-16 sm:h-20 md:h-16" />
-                <div className="text-white/90 font-montserrat uppercase tracking-wider font-semibold text-2xl sm:text-3xl md:text-2xl">
+                <FreeFireLogo className="h-10 sm:h-12 md:h-16" />
+                <div className="text-white/90 font-montserrat uppercase tracking-wider font-semibold text-lg sm:text-xl md:text-2xl">
                   <span>Community</span>
                 </div>
               </div>
@@ -107,14 +106,14 @@ const Footer = () => (
     <footer id="contact" className="bg-transparent py-6 relative z-10">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col md:flex-row items-center justify-between gap-4">
-          <div className="text-center md:text-left text-foreground/50 text-xs sm:text-sm">
+          <div className="text-center md:text-left text-foreground/50 text-xs sm:text-sm md:text-base">
             &copy; {new Date().getFullYear()} Tribex Esports. All rights reserved.
           </div>
-          <div className="flex justify-center md:justify-end space-x-4 text-foreground/50">
-            <a href="https://discord.gg/h52CbbBXFk" className="hover:text-white transition"><DiscordIcon className="h-5 w-5 sm:h-6 sm:w-6" /></a>
-            <a href="https://chat.whatsapp.com/ESlMzHWHRKpKMsijRUS934?mode=ems_copy_t" target="_blank" rel="noopener noreferrer" className="hover:text-white transition"><WhatsAppIcon className="h-5 w-5 sm:h-6 sm:w-6" /></a>
-            <a href="mailto:contact@tribexesports.com" className="hover:text-white transition"><Mail className="h-5 w-5 sm:h-6 sm:w-6" /></a>
-            <a href="tel:+919140934524" className="hover:text-white transition"><Phone className="h-5 w-5 sm:h-6 sm:w-6" /></a>
+          <div className="flex justify-center md:justify-end space-x-4 sm:space-x-6 text-foreground/50">
+            <a href="https://discord.gg/h52CbbBXFk" className="hover:text-white transition"><DiscordIcon className="h-5 w-5 sm:h-6 sm:w-6 md:h-7 md:w-7" /></a>
+            <a href="https://chat.whatsapp.com/ESlMzHWHRKpKMsijRUS934?mode=ems_copy_t" target="_blank" rel="noopener noreferrer" className="hover:text-white transition"><WhatsAppIcon className="h-5 w-5 sm:h-6 sm:w-6 md:h-7 md:w-7" /></a>
+            <a href="mailto:contact@tribexesports.com" className="hover:text-white transition"><Mail className="h-5 w-5 sm:h-6 sm:w-6 md:h-7 md:w-7" /></a>
+            <a href="tel:+919140934524" className="hover:text-white transition"><Phone className="h-5 w-5 sm:h-6 sm:w-6 md:h-7 md:w-7" /></a>
           </div>
         </div>
       </div>
@@ -159,6 +158,7 @@ const Footer = () => (
     
 
     
+
 
 
 

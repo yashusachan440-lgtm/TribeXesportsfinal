@@ -7,6 +7,7 @@ import { DiscordIcon } from '@/components/icons/discord-icon';
 import { WhatsAppIcon } from '@/components/icons/whatsapp-icon';
 import { FreeFireLogo } from '@/components/icons/free-fire-logo';
 import LottiePlayer from '@/components/lottie-player';
+import Confetti from '@/components/confetti';
 
 const HeroSection = () => {
   return (
@@ -72,7 +73,6 @@ const HeroSection = () => {
               <LottiePlayer
                 loop
                 animationData="https://lottie.host/c1b2dc54-bd3d-4d31-860f-8d75508ce8e6/OKBgN4LfK5.lottie"
-                play={true}
                 style={{ width: 400, height: 400 }}
               />
             </div>

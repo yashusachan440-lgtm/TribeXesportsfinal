@@ -29,7 +29,7 @@ const HeroSection = () => {
   
     return (
         <section id="home" className="relative h-screen w-full flex flex-col items-center justify-center text-white overflow-hidden">
-            <div className="fixed top-0 left-0 w-full h-full -z-10 overflow-hidden">
+            <div className="absolute top-0 left-0 w-full h-full -z-10 overflow-hidden">
                 <iframe
                     className="absolute top-1/2 left-1/2 min-w-full min-h-full w-auto h-auto"
                     style={{

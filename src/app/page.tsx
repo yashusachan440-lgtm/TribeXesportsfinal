@@ -9,7 +9,7 @@ export default function Home() {
   const videoId = 'JDY8XkebaeA';
 
   return (
-    <div className="relative flex flex-col min-h-screen bg-transparent overflow-x-hidden">
+    <div className="relative flex flex-col min-h-screen bg-transparent">
       <VideoBackground videoId={videoId} />
       <main className="flex-1 flex flex-col">
         <HeroSection />

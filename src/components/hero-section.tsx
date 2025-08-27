@@ -12,25 +12,25 @@ const HeroSection = () => {
   return (
     <section
       id="home"
-      className="relative h-screen w-full flex flex-col items-center justify-center text-white overflow-hidden"
+      className="relative w-full flex-1 flex flex-col items-center justify-center text-white"
     >
       <div className="container mx-auto relative z-10 px-4 flex-1 flex flex-col justify-center items-center py-8">
-        <div className="flex flex-col xl:flex-row items-center justify-center xl:justify-between gap-8 w-full">
-          <div className="w-full max-w-4xl text-center xl:text-left flex flex-col items-center xl:items-start">
-            <h1 className="text-5xl sm:text-7xl md:text-8xl font-extrabold mb-4 lg:mb-8 font-poppins leading-tight whitespace-nowrap mt-6 sm:mt-10">
+        <div className="flex flex-col lg:flex-row items-center justify-center lg:justify-between gap-8 w-full">
+          <div className="w-full max-w-2xl text-center lg:text-left flex flex-col items-center lg:items-start">
+            <h1 className="text-5xl sm:text-6xl md:text-7xl font-extrabold mb-4 font-poppins leading-tight">
               <span className="text-primary">TRIBEX</span>{' '}
               <span className="text-white font-open-sans">Esports</span>
             </h1>
-            <div className="flex flex-col md:flex-row items-center justify-center gap-x-2 md:gap-x-4 mb-6 text-xl sm:text-2xl md:text-2xl">
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-x-2 md:gap-x-4 mb-6 text-xl sm:text-2xl">
               <div className="text-white/90 font-montserrat uppercase tracking-wider font-semibold">
                 <span>Revolutionizing</span>
               </div>
-              <FreeFireLogo className="h-14 sm:h-16 md:h-16" />
+              <FreeFireLogo className="h-12 sm:h-14 md:h-16" />
               <div className="text-white/90 font-montserrat uppercase tracking-wider font-semibold">
                 <span>Community</span>
               </div>
             </div>
-            <div className="text-sm sm:text-base md:text-lg mb-8 max-w-2xl text-white/80 mx-auto xl:mx-0">
+            <div className="text-sm sm:text-base md:text-lg mb-8 max-w-xl text-white/80 mx-auto lg:mx-0">
               <p>
                 Something is about to shake the Indian esports scene… A movement
                 is rising—one that doesn’t care about fame, money, or
@@ -39,7 +39,7 @@ const HeroSection = () => {
                 opportunities are equal, and legends are made.
               </p>
             </div>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center xl:justify-start">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
               <a
                 href="https://discord.gg/h52CbbBXFk"
                 target="_blank"
@@ -67,14 +67,14 @@ const HeroSection = () => {
               </a>
             </div>
           </div>
-          <div className="w-full xl:w-auto mt-8 xl:mt-0 flex items-center justify-center">
-            <div className="relative flex items-center justify-center w-[400px] h-[400px]">
+          <div className="w-full lg:w-auto mt-8 lg:mt-0 flex items-center justify-center">
+            <div className="relative flex items-center justify-center w-[300px] h-[300px] sm:w-[400px] sm:h-[400px]">
               <div className="absolute inset-0 z-0 flex items-center justify-center">
                 <LottiePlayer
                   loop
                   autoplay
                   src="https://lottie.host/c1b2dc54-bd3d-4d31-860f-8d75508ce8e6/OKBgN4LfK5.lottie"
-                  style={{ width: 400, height: 400 }}
+                  style={{ width: '100%', height: '100%' }}
                 />
               </div>
               <div className="relative z-10 flex flex-col items-center justify-center">
@@ -94,7 +94,7 @@ const HeroSection = () => {
                   loop
                   autoplay
                   src="https://lottie.host/7ab080fc-298b-41c7-94fb-4c37ed1d71ad/tUXflEu9Md.lottie"
-                  style={{ width: 300, height: 300 }}
+                  style={{ width: '75%', height: '75%' }}
                 />
               </div>
             </div>

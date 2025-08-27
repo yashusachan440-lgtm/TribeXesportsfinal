@@ -38,7 +38,7 @@ const HeroSection = () => {
                 opportunities are equal, and legends are made.
               </p>
             </div>
-            <div className="flex flex-col sm:flex-row gap-4 mb-10 justify-center xl:justify-start">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center xl:justify-start">
               <a
                 href="https://discord.gg/h52CbbBXFk"
                 target="_blank"
@@ -46,7 +46,7 @@ const HeroSection = () => {
               >
                 <Button
                   size="lg"
-                  className="bg-[#5865F2] hover:bg-[#4f5bda] text-white font-bold transition flex items-center gap-2 justify-center"
+                  className="bg-[#5865F2] hover:bg-[#4f5bda] text-white font-bold transition flex items-center gap-2 justify-center w-48"
                 >
                   <DiscordIcon className="h-6 w-6" />
                   Join Discord
@@ -59,7 +59,7 @@ const HeroSection = () => {
               >
                 <Button
                   size="lg"
-                  className="bg-[#25D366] hover:bg-[#1EBE57] text-white font-bold transition flex items-center gap-2 justify-center"
+                  className="bg-[#25D366] hover:bg-[#1EBE57] text-white font-bold transition flex items-center gap-2 justify-center w-48"
                 >
                   <WhatsAppIcon className="h-6 w-6" /> Join Whatsapp
                 </Button>

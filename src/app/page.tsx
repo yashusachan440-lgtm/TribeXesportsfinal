@@ -16,9 +16,8 @@ import confettiAnimation from '../../public/animations/confetti.json';
 
 export default function Home() {
   return (
-    <div className="flex flex-col h-screen bg-background overflow-hidden">
-      
-      <main className="flex-1">
+    <div className="flex flex-col min-h-screen bg-background overflow-hidden">
+      <main className="flex-1 flex">
         <HeroSection />
       </main>
     </div>
@@ -26,16 +25,18 @@ export default function Home() {
 }
 
 const HeroSection = () => {
-    const videoSrc = `https://www.youtube.com/embed/JDY8XkebaeA?autoplay=1&mute=1&loop=1&playlist=JDY8XkebaeA&controls=0&showinfo=0&autohide=1&playsinline=1`;
+    const videoSrc = `https://www.youtube.com/embed/JDY8XkebaeA?autoplay=1&loop=1&playlist=JDY8XkebaeA&controls=0&showinfo=0&autohide=1&playsinline=1`;
   
     return (
         <section id="home" className="relative h-screen w-full flex flex-col justify-between text-white overflow-hidden">
             <div className="absolute top-0 left-0 w-full h-full z-0 overflow-hidden">
                 <iframe
-                    className="absolute top-1/2 left-1/2 w-full h-full object-cover"
+                    className="absolute top-1/2 left-1/2"
                     style={{
-                        minWidth: '100%',
-                        minHeight: '100%',
+                        minWidth: '100vw',
+                        minHeight: '100vh',
+                        width: 'auto',
+                        height: 'auto',
                         transform: 'translate(-50%, -50%)',
                     }}
                     src={videoSrc}
@@ -53,18 +54,18 @@ const HeroSection = () => {
               </div>
             </header>
     
-            <div className="container mx-auto relative z-10 px-4 flex-1 flex flex-col justify-center items-center py-16">
+            <div className="container mx-auto relative z-10 px-4 flex-1 flex flex-col justify-center items-center py-8">
               <div className="flex flex-col xl:flex-row items-center justify-center xl:justify-between gap-8 w-full">
                 <div className="w-full max-w-4xl text-center xl:text-left flex flex-col items-center xl:items-start">
                   <h1 className="text-5xl sm:text-7xl md:text-8xl font-extrabold mb-4 lg:mb-8 font-poppins leading-tight whitespace-nowrap mt-6 sm:mt-10">
                     <span className="text-primary">TRIBEX</span> <span className="text-white font-open-sans">Esports</span>
                   </h1>
-                  <div className="flex flex-col md:flex-row items-center justify-center gap-x-2 md:gap-x-4 mb-6">
-                    <div className="text-white/90 font-montserrat uppercase tracking-wider font-semibold text-lg sm:text-xl md:text-2xl">
+                  <div className="flex flex-col md:flex-row items-center justify-center gap-x-2 md:gap-x-4 mb-6 text-xl sm:text-2xl md:text-2xl">
+                    <div className="text-white/90 font-montserrat uppercase tracking-wider font-semibold">
                       <span>Revolutionizing</span>
                     </div>
-                    <FreeFireLogo className="h-12 sm:h-14 md:h-16" />
-                    <div className="text-white/90 font-montserrat uppercase tracking-wider font-semibold text-lg sm:text-xl md:text-2xl">
+                    <FreeFireLogo className="h-14 sm:h-16 md:h-16" />
+                    <div className="text-white/90 font-montserrat uppercase tracking-wider font-semibold">
                       <span>Community</span>
                     </div>
                   </div>

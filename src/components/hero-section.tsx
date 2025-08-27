@@ -7,29 +7,37 @@ import { DiscordIcon } from '@/components/icons/discord-icon';
 import { WhatsAppIcon } from '@/components/icons/whatsapp-icon';
 import { FreeFireLogo } from '@/components/icons/free-fire-logo';
 import LottiePlayer from '@/components/lottie-player';
+import { Mail, Phone } from 'lucide-react';
 
 const HeroSection = () => {
   return (
     <section
       id="home"
-      className="relative w-full flex-1 flex flex-col items-center justify-center text-white"
+      className="relative w-full h-full flex flex-col items-center justify-between text-white p-4 sm:p-6"
     >
-      <div className="container mx-auto relative z-10 px-4 flex-1 flex flex-col justify-center items-center py-8">
-        <div className="flex flex-col lg:flex-row items-center justify-center lg:justify-between gap-8 w-full">
+      <div className="flex-shrink-0 w-full" />
+
+      <div className="w-full flex-grow flex flex-col justify-center items-center">
+        <div className="w-full flex flex-col lg:flex-row items-center justify-center gap-4 lg:gap-8">
           <div className="w-full max-w-2xl text-center lg:text-left flex flex-col items-center lg:items-start">
-            <h1 className="text-5xl sm:text-6xl md:text-7xl font-extrabold mb-4 font-poppins leading-tight">
+            <h1 className="text-5xl sm:text-6xl md:text-7xl font-extrabold font-poppins leading-tight whitespace-nowrap">
               <span className="text-primary">TRIBEX</span>{' '}
               <span className="text-white font-open-sans">Esports</span>
             </h1>
-            <div className="flex flex-col lg:flex-row items-center lg:justify-start gap-x-2 md:gap-x-3 mb-6 text-lg sm:text-xl lg:text-base">
-              <div className="text-white/90 font-montserrat uppercase tracking-widest font-semibold lg:tracking-[0.1em]">
-                <span>Revolutionizing</span>
+
+            <div className="flex flex-col lg:flex-row items-center justify-center lg:justify-start gap-x-2 lg:gap-x-3 mt-4 mb-6 text-lg sm:text-xl lg:text-base">
+              <div className="lg:hidden flex flex-col items-center">
+                <span className="text-white/90 font-montserrat uppercase tracking-widest font-semibold">Revolutionizing</span>
+                <FreeFireLogo className="h-10 sm:h-12 md:h-14 my-1" />
+                <span className="text-white/90 font-montserrat uppercase tracking-widest font-semibold">Community</span>
               </div>
-              <FreeFireLogo className="h-10 sm:h-12 md:h-14 lg:h-10" />
-              <div className="text-white/90 font-montserrat uppercase tracking-widest font-semibold lg:tracking-[0.1em]">
+              <div className="hidden lg:flex items-center gap-x-2 text-white/90 font-montserrat uppercase font-semibold tracking-wider" style={{ fontSize: '0.9rem', letterSpacing: '0.07em' }}>
+                <span>Revolutionizing</span>
+                <FreeFireLogo className="h-8" />
                 <span>Community</span>
               </div>
             </div>
+
             <div className="text-sm sm:text-base md:text-lg mb-8 max-w-xl text-white/80 mx-auto lg:mx-0">
               <p>
                 Something is about to shake the Indian esports scene… A movement
@@ -67,7 +75,7 @@ const HeroSection = () => {
               </a>
             </div>
           </div>
-          <div className="w-full lg:w-auto mt-8 lg:mt-0 flex items-center justify-center">
+          <div className="w-full lg:w-auto mt-8 lg:mt-0 flex-grow flex items-center justify-center">
             <div className="relative flex items-center justify-center w-[300px] h-[300px] sm:w-[400px] sm:h-[400px]">
               <div className="absolute inset-0 z-0 flex items-center justify-center">
                 <LottiePlayer
@@ -101,6 +109,45 @@ const HeroSection = () => {
           </div>
         </div>
       </div>
+
+      <footer
+        id="contact"
+        className="w-full flex-shrink-0 pt-4"
+      >
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex flex-col md:flex-row items-center justify-between gap-4">
+            <div className="text-center md:text-left text-foreground/50 text-xs sm:text-sm">
+              &copy; {new Date().getFullYear()} Tribex Esports. All rights
+              reserved.
+            </div>
+            <div className="flex justify-center md:justify-end space-x-4 sm:space-x-6 text-foreground/50">
+              <a
+                href="https://discord.gg/h52CbbBXFk"
+                className="hover:text-white transition"
+              >
+                <DiscordIcon className="h-5 w-5 sm:h-6 sm:w-6" />
+              </a>
+              <a
+                href="https://chat.whatsapp.com/ESlMzHWHRKpKMsijRUS934?mode=ems_copy_t"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-white transition"
+              >
+                <WhatsAppIcon className="h-5 w-5 sm:h-6 sm:w-6" />
+              </a>
+              <a
+                href="mailto:contact@tribexesports.com"
+                className="hover:text-white transition"
+              >
+                <Mail className="h-5 w-5 sm:h-6 sm:w-6" />
+              </a>
+              <a href="tel:+919140934524" className="hover:text-white transition">
+                <Phone className="h-5 w-5 sm:h-6 sm:w-6" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </footer>
     </section>
   );
 };

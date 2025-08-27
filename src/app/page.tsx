@@ -25,19 +25,15 @@ export default function Home() {
 }
 
 const HeroSection = () => {
-    const videoSrc = `https://www.youtube.com/embed/JDY8XkebaeA?autoplay=1&loop=1&playlist=JDY8XkebaeA&controls=0&showinfo=0&autohide=1&playsinline=1`;
+    const videoSrc = `https://www.youtube.com/embed/JDY8XkebaeA?autoplay=1&loop=1&playlist=JDY8XkebaeA&controls=0&showinfo=0&autohide=1&playsinline=1&mute=0`;
   
     return (
         <section id="home" className="relative h-screen w-full flex flex-col justify-between text-white overflow-hidden">
             <div className="absolute top-0 left-0 w-full h-full z-0 overflow-hidden">
                 <iframe
-                    className="absolute top-1/2 left-1/2"
+                    className="absolute top-1/2 left-1/2 min-w-full min-h-full w-auto h-auto"
                     style={{
-                        minWidth: '100vw',
-                        minHeight: '100vh',
-                        width: 'auto',
-                        height: 'auto',
-                        transform: 'translate(-50%, -50%)',
+                        transform: 'translate(-50%, -50%) scale(1.5)',
                     }}
                     src={videoSrc}
                     title="YouTube video player"

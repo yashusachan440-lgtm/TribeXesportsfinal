@@ -17,7 +17,7 @@ import confettiAnimation from '../../public/animations/confetti.json';
 export default function Home() {
   return (
     <div className="flex flex-col min-h-screen bg-background overflow-hidden">
-      <main className="flex-1 flex">
+      <main className="flex-1">
         <HeroSection />
       </main>
     </div>
@@ -29,12 +29,10 @@ const HeroSection = () => {
   
     return (
         <section id="home" className="relative h-screen w-screen flex flex-col text-white overflow-hidden">
-            <div className="absolute top-0 left-0 w-full h-full z-0">
+            <div className="absolute top-0 left-0 w-full h-full z-0 overflow-hidden">
                 <iframe
                     className="absolute top-1/2 left-1/2 min-w-full min-h-full w-auto h-auto object-cover"
-                    style={{
-                        transform: 'translate(-50%, -50%)',
-                    }}
+                    style={{ transform: 'translate(-50%, -50%) scale(1.5)' }}
                     src={videoSrc}
                     title="YouTube video player"
                     frameBorder="0"
@@ -121,3 +119,4 @@ const Footer = () => (
       </div>
     </footer>
   );
+

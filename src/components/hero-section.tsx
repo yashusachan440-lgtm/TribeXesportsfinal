@@ -10,24 +10,10 @@ import LottiePlayer from '@/components/lottie-player';
 import { Mail, Phone } from 'lucide-react';
 
 const HeroSection = () => {
-  // Add click handler to attempt audio playback
-  const handleUserInteraction = () => {
-    // This will help browsers allow audio autoplay after user interaction
-    const iframe = document.getElementById('youtube-background-video') as HTMLIFrameElement;
-    if (iframe) {
-      // Reload the iframe to trigger autoplay with audio after user interaction
-      const currentSrc = iframe.src;
-      if (currentSrc.includes('mute=1')) {
-        iframe.src = currentSrc.replace('mute=1', 'mute=0');
-      }
-    }
-  };
-
   return (
     <section
       id="home"
       className="relative w-full h-full flex flex-col items-center justify-between text-white p-4 sm:p-6"
-      onClick={handleUserInteraction}
     >
       <div className="flex-shrink-0 w-full" />
 
@@ -66,7 +52,6 @@ const HeroSection = () => {
                 href="https://discord.gg/h52CbbBXFk"
                 target="_blank"
                 rel="noopener noreferrer"
-                onClick={handleUserInteraction}
               >
                 <Button
                   size="lg"
@@ -80,7 +65,6 @@ const HeroSection = () => {
                 href="https://chat.whatsapp.com/ESlMzHWHRKpKMsijRUS934?mode=ems_copy_t"
                 target="_blank"
                 rel="noopener noreferrer"
-                onClick={handleUserInteraction}
               >
                 <Button
                   size="lg"

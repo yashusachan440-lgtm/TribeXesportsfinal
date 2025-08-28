@@ -1,7 +1,7 @@
 
 'use client';
 
-import { useState, useEffect, useRef } from 'react';
+import { useState, useRef } from 'react';
 import { UnmuteButton } from './unmute-button';
 
 interface VideoBackgroundProps {
@@ -9,32 +9,14 @@ interface VideoBackgroundProps {
 }
 
 const VideoBackground = ({ videoId }: VideoBackgroundProps) => {
-  const [isMuted, setIsMuted] = useState(false);
+  const [isMuted, setIsMuted] = useState(true);
   const iframeRef = useRef<HTMLIFrameElement>(null);
 
   const toggleMute = () => {
-    setIsMuted(!isMuted);
-    // Reload iframe with new mute parameter
-    if (iframeRef.current) {
-      const newSrc = `https://www.youtube.com/embed/${videoId}?autoplay=1&loop=1&playlist=${videoId}&controls=0&showinfo=0&autohide=1&playsinline=1&mute=${!isMuted ? 1 : 0}&enablejsapi=1`;
-      iframeRef.current.src = newSrc;
-    }
+    setIsMuted((prevMuted) => !prevMuted);
   };
-
+  
   const videoSrc = `https://www.youtube.com/embed/${videoId}?autoplay=1&loop=1&playlist=${videoId}&controls=0&showinfo=0&autohide=1&playsinline=1&mute=${isMuted ? 1 : 0}&enablejsapi=1&rel=0&modestbranding=1`;
-
-  useEffect(() => {
-    // Try to unmute after a short delay to handle browser autoplay policies
-    const timer = setTimeout(() => {
-      if (!isMuted && iframeRef.current) {
-        // Attempt to reload with unmuted audio
-        const newSrc = `https://www.youtube.com/embed/${videoId}?autoplay=1&loop=1&playlist=${videoId}&controls=0&showinfo=0&autohide=1&playsinline=1&mute=0&enablejsapi=1&rel=0&modestbranding=1`;
-        iframeRef.current.src = newSrc;
-      }
-    }, 1000);
-
-    return () => clearTimeout(timer);
-  }, [videoId, isMuted]);
 
   return (
     <>
